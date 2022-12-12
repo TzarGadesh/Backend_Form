@@ -21,3 +21,100 @@ footer{
     grid-area: footer;
 }
 
+/* NAV*/
+.nav-logo{
+    margin-left:25px;
+}
+
+.nav-logo:hover img{
+    opacity: 0.8;
+}
+
+.nav-logo img{
+    width:200px;
+    height:50px;
+}
+
+.nav-logo:hover{
+    cursor: pointer;
+}
+
+.nav-menu div{
+    cursor: pointer;
+}
+
+.nav-menu div:hover{
+    background-color: #4B56D2;
+    transition: 750ms;
+}
+
+.nav-menu div:hover a{
+    color:rgb(20,20,20);
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#4B56D2;
+    margin:30px 40px;
+}
+
+#nav-upit{
+    background-color:#4B56D2;
+}
+
+#nav-upit:hover{
+    background-color: rgba(75, 86, 210,0.7);
+}
+
+#nav-upit a{
+    color:rgb(20,20,20);
+}
+
+#nav-upit:hover a{
+    color:black;
+}
+
+
+
+
+/* Laptop i desktop racunar */
+@media (min-width:1025px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+    }
+
+    .nav-menu div{
+        display:flex;
+        align-items: center;
+    }
+
+
+    #nav-burger{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width:600) and (max-width:1025px) {
+
+}
+
+/* Mobilni */
+@media (max-width:600) {
+
+}
+
