@@ -1,32 +1,55 @@
-html, body{
-    background-color: #472183;
+body{
+    background-color: blanchedalmond;
 }
-.main{
+.kartice{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #472183;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.kartice div{
+    border-radius: 15px;
 }
 .drum{
     display: grid;
-    grid-template-columns: auto 1fr;
 }
 .avio{
     display: grid;
-    grid-template-columns: 1fr auto;
 }
 .brod{
     display: grid;
-    grid-template-columns: auto 1fr;
 }
 .carina{
     display: grid;
-    grid-template-columns: 1fr auto;
 }
 .sklad{
     display: grid;
-    grid-template-columns: auto 1fr;
 }
 .zbirni{
     display: grid;
-    grid-template-columns: 1fr auto;
+}
+.ikonica{
+    text-align: center;
+}
+.tekst{
+    text-align: center;
+}
+.kartica{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+@media (505px <= width < 784px) {
+    .kartice{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (width<505px){
+    .kartice{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
 }
