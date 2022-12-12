@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    color: #023e8a;
+    background-color: rgb(20,20,20);
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
