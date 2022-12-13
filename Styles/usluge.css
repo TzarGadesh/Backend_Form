@@ -127,5 +127,44 @@ img{
         margin: 10px 5px;
         padding: 5px;
     }
-
 }
+
+.footer{
+    margin: 10px 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: 125px auto;
+}
+.mreze{
+   text-align: right;
+   font-size: 30px;
+}
+.mreze .fal{
+padding: 5px;
+}
+
+.kopirajt{
+    text-align: center ;
+}
+
+@media (width<=340px){
+    .socials{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .logof{
+        display: grid;
+        width: 125px;
+    justify-self: center;
+    align-self: center;
+    }
+    .mreze{
+        text-align: center;
+    }
+}
+
+
