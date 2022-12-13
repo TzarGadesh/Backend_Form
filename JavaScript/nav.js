@@ -12,3 +12,21 @@ function burgerClicked(){
     $(".nav-burger").toggleClass("donji-border");
     $(".nav-menu").toggleClass("nav-menu-grid")
 }
+
+// Klik na logo
+$(".nav-logo").click(function(){
+    let text = document.querySelector("#nav-oNama a").innerText;
+
+    switch(text){
+        case "O NAMA": window.open("home.html","_self") 
+            break;
+        case "ABOUT": window.open("home-eng.html","_self")
+            break;
+        case "ABOUT(RUS)": window.open("home-rus.html","_self")
+            break;
+    }
+})
+
+$(".nav-menu div").click(function(){
+    window.open(this.firstElementChild.attributes.href.value,"_self");
+})
