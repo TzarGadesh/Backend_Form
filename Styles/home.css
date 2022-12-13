@@ -1,0 +1,91 @@
+.container1{
+    height: 400px;
+    background-image: url("/Slike/fejk-mapa.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-right: 25px;
+}
+.tekst1{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.brojac{
+    background-color:rgba(75, 86, 210,0.7);
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction:row;
+    justify-content: space-evenly;
+    
+}
+h3{
+    color: rgb(20,20,20);
+    font-size: 3.5rem;
+    text-align: center;
+}
+p{
+   font-size: 1.5rem;
+   color:rgb(20,20,20);
+}
+.brojac > p{
+    text-align: center; 
+}
+.broj{
+    margin: 15px;
+    text-align: center;
+    align-items: center;
+}
+.broj > i{
+    padding: 15px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .brojac{
+        width: 100vw;
+    }
+    .broj>p{
+        font-size: 1.25rem;
+    }
+    .broj > h3{
+        font-size: 2rem;
+    }
+    .broj > i {
+        width: 75%;
+        height: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .brojac{
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .broj{
+        width: calc(100% - 30px);
+    }
+    .broj > p{
+        font-size: 1rem;
+    }
+    .broj > h3{
+        font-size: 1.75rem;
+    }
+    .broj > i {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .broj{
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    .broj > h3{
+        font-size: 1.25rem;
+    }
+    .broj > i {
+        width: 25%;
+        height: 25%;
+    }
+}
