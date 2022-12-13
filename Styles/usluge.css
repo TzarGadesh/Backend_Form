@@ -1,3 +1,18 @@
+
+html, body{
+    background-color: antiquewhite
+}
+
+.slika{
+    margin: 10px;
+}
+.main{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #472183;
+}
+
+
 .kartice{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -9,31 +24,6 @@ h4{
 }
 .kartice{
     padding: 25px 20px 0;
-}
-.drum{
-    display: grid;
-}
-.avio{
-    display: grid;
-}
-.brod{
-    display: grid;
-}
-.carina{
-    display: grid;
-}
-.skladiste{
-    display: grid;
-}
-.zbirni{
-    display: grid;
-}
-.ikonica{
-    text-align: center;
-}
-.tekst{
-    text-align: center;
-}
 
 .kartica{
     margin: 20px;
@@ -53,18 +43,163 @@ h4{
     transform: translateY(0);
     opacity: 1;
   }
+  
+.uvod{
+    margin: 10px 5px;
+    padding: 5px;
+}
+.drum{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.avio{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.brod{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.carina{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.skladiste{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.zbirni{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
-@media (505px <= width < 784px) {
-    .kartice{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
+.tekst{
+    display: grid;
+    align-self: center;
+    text-align: left;
+    font-size: 2vw;
+    padding: 0 10px;
 }
-@media (width<505px){
-    .kartice{
+
+.uvod{
+    font-size: 2vw;
+    padding: 0 10px;
+}
+h3{
+    font-size: 3vw;
+    font-weight: 800;
+}
+img{
+    width: 100%;
+}
+.sd{
+    display: grid;
+    justify-self: end;
+}
+
+@media (width <=700px){
+   .drum{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+   }
+   .avio{
+    grid-template-areas: "slika"
+    "tekst";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    }
+    .avio .tekst{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-area: tekst;
+    }
+    .avio .slika{
+        display: grid;
+        grid-area: slika;
+    }
+
+    .brod{
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .carina{
+        grid-template-areas: "slika"
+        "tekst";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .carina .tekst{
+        display: grid;
+        grid-area: tekst;
+    }
+    .carina .slika{
+        display: grid;
+        grid-area: slika;
+    }
+    .skladiste{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }       
+    .zbirni{
+        grid-template-areas: "slika"
+        "tekst";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .zbirni .tekst{
+        display: grid;
+        grid-area: tekst;
+    }
+    .zbirni .slika{
+        display: grid;
+        grid-area: slika;
+    }
+    .tekst{
+        text-align: center;
+        align-self: start;
+        margin: 10px 5px;
+    }
+    .uvod{
+        margin: 10px 5px;
+        padding: 5px;
     }
 }
+
+.footer{
+    margin: 10px 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: 125px auto;
+}
+.mreze{
+   text-align: right;
+   font-size: 30px;
+}
+.mreze .fal{
+padding: 5px;
+}
+
+.kopirajt{
+    text-align: center ;
+}
+
+@media (width<=340px){
+    .socials{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .logof{
+        display: grid;
+        width: 125px;
+    justify-self: center;
+    align-self: center;
+    }
+    .mreze{
+        text-align: center;
+    }
+}
+
+
