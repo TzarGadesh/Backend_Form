@@ -1,3 +1,4 @@
+
 html, body{
     background-color: antiquewhite
 }
@@ -10,6 +11,39 @@ html, body{
     grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: #472183;
 }
+
+
+.kartice{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:white;
+}
+h4{
+    font-size: 2.75rem;
+}
+.kartice{
+    padding: 25px 20px 0;
+
+.kartica{
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(75, 86, 210,0.7);
+    border-radius: 7.5%;
+    border: 2px solid rgba(20,20,20,0.5);
+    font-size: 1.5rem;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
 .uvod{
     margin: 10px 5px;
     padding: 5px;
@@ -46,6 +80,7 @@ html, body{
     font-size: 2vw;
     padding: 0 10px;
 }
+
 .uvod{
     font-size: 2vw;
     padding: 0 10px;
