@@ -21,7 +21,29 @@
 </head>
 <body>
     <header>
-          
+        <div class="nav-logo">
+            <img src="slike/logo.png" alt="">
+        </div>
+
+        <button class="nav-burger" onClick="burgerClicked()">
+            <i class="nav-burger-icon fa-solid fa-bars burger-animation"></i>
+        </button>
+
+        <div class="nav-menu">
+            <div id="nav-oNama">
+                <a class="nav-link" href="o-nama.html">O NAMA</a>
+            </div>
+            <div id="nav-usluge" >
+                <a class="nav-link" href="usluge.html">USLUGE</a>
+            </div>
+            <div id="nav-kontakt">
+                <a class="nav-link" href="kontakt.html">KONTAKT</a>
+            </div>
+            <div id="nav-upit">
+                <a class="nav-link" href="upit.html">UPIT</a>
+            </div>
+            
+        </div>
     </header>
 
     <main>
@@ -44,12 +66,16 @@
             <div class="broj3 broj" ><i class="fa-sharp fa-solid fa-globe fa-4x"></i><h3 class="num" data-val="83">+</h3><p>Različtih država</p></div>
         </div>
 
-
+     
     </main>
 
     <footer>
        
     </footer>
+    <!-- Jquery i JS za navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="Javascript/nav.js"></script>
+    <!-- Laki brojac -->
     <script src="JavaScript/brojac.js"></script>
 </body>
 </html>
