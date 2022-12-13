@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    background-color: rgb(15,15,15);
+}
+
+main{
+    display:grid;
+    grid-template-areas:"logo"
+    "jezici"
+    "copyright";
+    justify-items: center;
+}
+
+.logo-slika{
+    grid-area:logo;
+    margin-top:3rem;
+}
+
+.logo-slika img{
+    transition: 500ms;
+}
+
+.jezici{
+    grid-area:jezici;
+    margin:15vh auto 3vh;
+    display: flex;
+    flex-direction: row;
+    width:85%;
+    align-items: center;
+    justify-content: space-between;
+    transition:1.5s ease-in;
+    opacity: 0;
+}
+
+.aktivan{
+    opacity:1;
+    transition: 1500ms ease-out;
+}
+
+.jezici div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:2.8rem;
+    color:rgba(255,255,255,0.5);
+    
+}
+
+.dugme-jezik{
+    width:250px;
+    height:200px;
+    border-radius:15%;
+    border:5px solid black;
+    padding:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+    box-shadow:6px 6px rgba(0,0,0,0.5);
+    
+}
+
+.dugme-jezik:hover{
+    opacity:0.75;
+}
+
+#srpski-jezik{
+    background-image:url("../Slike/zastava-srbije-grb.png");
+}
+
+#engleski-jezik{
+    background-image:url("../Slike/zastava-uk.png");
+}
+
+#ruski-jezik{
+    background-image:url("../Slike/zastava-rusije.png");
+}
+
+.copyright{
+    grid-area: copyright;
+    color:rgba(255,255,255);
+    font-size:1.25rem;
+    margin-bottom: 20px;
+}
+
+.pomeri-nagore{
+    margin-bottom:30px;
+}
+
+.pomeri-nadole{
+    margin-top:30px;
+}
+
+/* Tablet i mobilni */
+@media (max-width:955px){
+    .jezici{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .dugme-jezik{
+        width:70vw;
+        height:50vh;
+    }
+
+    .jezici div{
+        font-size:2rem;
+    }
+}
+
+@media (max-width:640px){
+    .logo-slika img{
+        width:90vw;
+        height:22.5vh;
+    }
+}

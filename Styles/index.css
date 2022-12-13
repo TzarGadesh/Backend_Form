@@ -59,7 +59,6 @@ footer{
 .nav-link{
     text-decoration: none;
     color:#4B56D2;
-    
 }
 
 #nav-upit{
@@ -132,10 +131,15 @@ footer{
         display: none;
     }
 
+    .nav-menu div{
+        padding:20px 40px;
+    }
+
     .nav-link{
-        margin:20px 40px;
+        width:100%;
     }
 }
+
 
 /* Tablet i mobilni */
 @media (max-width:1025px){
