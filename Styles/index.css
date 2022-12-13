@@ -1,3 +1,7 @@
+:root {
+    --glavnaBoja:  rgba(4,75,161,255);
+  }
+
 body{
     margin:0;
     font-family: 'Roboto Slab', serif;
@@ -9,7 +13,7 @@ body{
 
 header{
     grid-area: header;
-    color: #023e8a;
+    color: var(--glavnaBoja);
     background-color: rgb(20,20,20);
 }
 
@@ -47,7 +51,7 @@ footer{
 }
 
 .nav-menu div:hover{
-    background-color: #4B56D2;
+    background-color: var(--glavnaBoja);
     transition: 750ms;
 }
 
@@ -58,15 +62,15 @@ footer{
 
 .nav-link{
     text-decoration: none;
-    color:#4B56D2;
+    color:var(--glavnaBoja);
 }
 
 #nav-upit{
-    background-color:#4B56D2;
+    background-color:var(--glavnaBoja);
 }
 
 #nav-upit:hover{
-    background-color: rgba(75, 86, 210,0.7);
+    background-color: rgba(4,75,161,0.9);
 }
 
 #nav-upit a{
@@ -80,14 +84,14 @@ footer{
 .nav-burger{
     background-color: transparent;
     font-size:32px;
-    color:#4B56D2;
+    color:var(--glavnaBoja);
     outline: none;
     border: none;
     transition: 750ms;
 }
 
 .nav-burger:hover{
-    background-color: rgba(75, 86, 210,0.7);
+    background-color: rgba(4,75,161,0.9);
     color:rgb(20,20,20);
     transition: 750ms;
 }
@@ -165,7 +169,7 @@ footer{
     }
 
     .donji-border{
-        border-bottom: 4px solid #4B56D2;
+        border-bottom: 4px solid var(--glavnaBoja);
         transition: 350ms !important;
     }
 
@@ -176,7 +180,7 @@ footer{
     }
 
     .nav-menu-grid div{
-        border-bottom:1px solid rgba(75, 86, 210,0.7);
+        border-bottom:1px solid rgba(4,75,161,0.9);
     }
 
 

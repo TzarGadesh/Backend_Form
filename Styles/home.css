@@ -1,3 +1,7 @@
+:root {
+    --glavnaBoja:  rgba(4,75,161,255);
+  }
+
 .container1{
     height: 400px;
     background-image: url("/Slike/fejk-mapa.jpg");
@@ -18,7 +22,7 @@ h2{
     font-size: 1.5rem;
 }
 .brojac{
-    background-color:rgba(75, 86, 210,0.7);
+    background-color:var(--glavnaBoja);
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
