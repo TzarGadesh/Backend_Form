@@ -30,3 +30,4 @@ $(".nav-logo").click(function(){
 $(".nav-menu div").click(function(){
     window.open(this.firstElementChild.attributes.href.value,"_self");
 })
+
