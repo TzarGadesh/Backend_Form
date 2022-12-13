@@ -9,6 +9,8 @@ body{
 
 header{
     grid-area: header;
+    color: #023e8a;
+    background-color: rgb(20,20,20);
 }
 
 main{
