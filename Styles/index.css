@@ -21,3 +21,182 @@ footer{
     grid-area: footer;
 }
 
+/* NAV*/
+.nav-logo{
+    padding:20px 0 20px 25px;
+}
+
+.nav-logo:hover img{
+    opacity: 0.8;
+    transition: 750ms;
+}
+
+.nav-logo img{
+    width:200px;
+    height:50px;
+    transition: 500ms;
+}
+
+.nav-logo:hover{
+    cursor: pointer;
+}
+
+.nav-menu div{
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.nav-menu div:hover{
+    background-color: #4B56D2;
+    transition: 750ms;
+}
+
+.nav-menu div:hover a{
+    color:rgb(20,20,20);
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#4B56D2;
+    
+}
+
+#nav-upit{
+    background-color:#4B56D2;
+}
+
+#nav-upit:hover{
+    background-color: rgba(75, 86, 210,0.7);
+}
+
+#nav-upit a{
+    color:rgb(20,20,20);
+}
+
+#nav-upit:hover a{
+    color:black;
+}
+
+.nav-burger{
+    background-color: transparent;
+    font-size:32px;
+    color:#4B56D2;
+    outline: none;
+    border: none;
+    transition: 750ms;
+}
+
+.nav-burger:hover{
+    background-color: rgba(75, 86, 210,0.7);
+    color:rgb(20,20,20);
+    transition: 750ms;
+}
+
+.burger-animation{
+    transform: rotate(180deg);
+    transition: 400ms;
+}
+
+
+
+
+
+
+/* Laptop i desktop racunar */
+@media (min-width:1025px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+    }
+
+    .nav-menu div{
+        display:flex;
+        align-items: center;
+    }
+
+
+    .nav-burger{
+        display: none;
+    }
+
+    .nav-link{
+        margin:20px 40px;
+    }
+}
+
+/* Tablet i mobilni */
+@media (max-width:1025px){
+    header{
+        grid-area: header;
+        display: grid;
+        grid-template-areas:"logo burger"
+        "menu menu";
+        grid-template-columns: auto 100px;
+    }
+
+    .nav-logo{
+        grid-area: logo;
+    }
+
+    .nav-burger{
+        grid-area: burger;
+    }
+    
+    .nav-menu{
+        display: none;
+        grid-area: menu;
+    }
+
+    .donji-border{
+        border-bottom: 4px solid #4B56D2;
+        transition: 350ms !important;
+    }
+
+    .nav-menu-grid{
+        display: grid !important;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .nav-menu-grid div{
+        border-bottom:1px solid rgba(75, 86, 210,0.7);
+    }
+
+
+
+    .nav-link{
+        margin:10px 30px;
+    }
+}
+
+
+/* Tablet */
+@media (max-width:1025px) and (min-width:600px){
+    
+}
+
+
+/* Mobilni */
+@media (max-width:600px) {
+    .nav-menu{
+        display: none;
+    } 
+
+    .nav-logo img{
+        width: calc(100vw / 3);
+    }
+}
+

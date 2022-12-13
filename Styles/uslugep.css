@@ -1,0 +1,32 @@
+html, body{
+    background-color: #472183;
+}
+.main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #472183;
+}
+.drum{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.avio{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.brod{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.carina{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.sklad{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.zbirni{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
