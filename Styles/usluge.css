@@ -1,13 +1,14 @@
-body{
-    background-color: blanchedalmond;
-}
 .kartice{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color:white;
 }
-.kartice div{
-    border-radius: 15px;
+h4{
+    font-size: 2.75rem;
+}
+.kartice{
+    padding: 25px 20px 0;
 }
 .drum{
     display: grid;
@@ -21,7 +22,7 @@ body{
 .carina{
     display: grid;
 }
-.sklad{
+.skladiste{
     display: grid;
 }
 .zbirni{
@@ -33,11 +34,25 @@ body{
 .tekst{
     text-align: center;
 }
+
 .kartica{
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(75, 86, 210,0.7);
+    border-radius: 7.5%;
+    border: 2px solid rgba(20,20,20,0.5);
+    font-size: 1.5rem;
 }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
 @media (505px <= width < 784px) {
     .kartice{

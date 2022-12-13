@@ -5,10 +5,17 @@
     background-position: right;
     margin-right: 25px;
 }
+h2{
+    font-size: 3rem;
+}
+
 .tekst1{
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
+}
+.tekst1 > p{
+    font-size: 1.5rem;
 }
 .brojac{
     background-color:rgba(75, 86, 210,0.7);
@@ -42,6 +49,15 @@ p{
 }
 
 
+.izmedju{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top: 2px solid rgb(20,20,20);
+    padding-top: 25px;
+}
+
 @media screen and (max-width: 1024px) {
     .brojac{
         width: 100vw;
@@ -57,6 +73,7 @@ p{
         height: 75%;
     }
 }
+
 @media screen and (max-width: 768px) {
     .brojac{
         width: 100vw;
@@ -89,3 +106,4 @@ p{
         height: 25%;
     }
 }
+
