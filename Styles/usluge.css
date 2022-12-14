@@ -12,38 +12,6 @@ html, body{
     background-color: #472183;
 }
 
-
-.kartice{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color:white;
-}
-h4{
-    font-size: 2.75rem;
-}
-.kartice{
-    padding: 25px 20px 0;
-
-.kartica{
-    margin: 20px;
-    padding: 15px;
-    background-color: var(--glavnaBoja);
-    border-radius: 7.5%;
-    border: 2px solid rgba(20,20,20,0.5);
-    font-size: 1.5rem;
-}
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
 .uvod{
     margin: 10px 5px;
     padding: 5px;
@@ -164,42 +132,6 @@ img{
     }
 }
 
-.footer{
-    margin: 10px 5px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
 
-.socials{
-    display: grid;
-    grid-template-columns: 125px auto;
-}
-.mreze{
-   text-align: right;
-   font-size: 30px;
-}
-.mreze .fal{
-padding: 5px;
-}
-
-.kopirajt{
-    text-align: center ;
-}
-
-@media (width<=340px){
-    .socials{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .logof{
-        display: grid;
-        width: 125px;
-    justify-self: center;
-    align-self: center;
-    }
-    .mreze{
-        text-align: center;
-    }
-}
 
 
