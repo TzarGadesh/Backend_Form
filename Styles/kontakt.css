@@ -1,0 +1,219 @@
+
+/*Divovi*/
+
+main div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+main{
+    overflow-x: hidden;
+}
+
+.col {
+    min-width: 200px;
+    text-align: center;
+}
+
+.avatari {
+    background-color: #4B56D2;
+
+}
+
+.card-body {
+    padding: 0;
+}
+
+.row {
+    margin-right: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #4B56D2;
+}
+
+#sekcija1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*Ikonice*/
+.icon {
+    color: #4B56D2;
+    margin-bottom: 1rem;
+}
+
+
+#row {
+    width: 100%;
+}
+
+.ikonice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/*Druga sekcija*/
+.avatar {
+    color: white;
+}
+
+.tekst-avatari {
+    color: white;
+    padding: 2px;
+
+
+
+}
+
+#col-avatari {
+    min-width: 451px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-avatari {
+    position: float;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Cetvrta sekcija*/
+
+.card-header {
+    background-color: #4B56D2;
+    margin: 0;
+    color: white;
+}
+
+.forma {
+    background-color: white;
+}
+
+.kucica {
+    width: 80%;
+    text-align: left;
+    border: 2px solid #4B56D2;
+    border-radius: 5px;
+}
+
+.kucica:focus {
+    border: 3px solid #472183;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+#selection {
+    height: 32px;
+}
+
+#kucetina {
+    width: 80%;
+    height: 30px;
+    text-align: left;
+    border: 2px solid #4B56D2;
+    border-radius: 5px;
+    min-height: 30px;
+    max-height: 75px;
+}
+
+#kucetina:focus {
+    border: 3px solid #472183;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+#desna {
+    margin-right: 10px;
+}
+
+#leva {
+    margin-left: 10px;
+}
+
+
+@media (width<=575px) {
+    #desna {
+        margin-right: 0;
+    }
+
+    #leva {
+        margin-left: 0;
+    }
+
+}
+
+/* Peta sekcija - Dugme*/
+.dugme {
+    background-color: #4B56D2;
+    /* Green */
+    border: 2px solid #472183;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.dugme:hover {
+    background-color: #472183;
+    border: #4B56D2;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #sekcija1 {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+        grid-template-areas: "lokacija telefon"
+            "mejl mejl";
+    }
+
+    .col-sm-6 {
+        padding-right: 0;
+    }
+
+    #lokacija {
+        grid-area: lokacija;
+    }
+
+    #telefon {
+        grid-area: telefon;
+    }
+
+    #mejl {
+        grid-area: mejl;
+    }
+}
+
+@media (max-width: 400px) {
+    #sekcija1 {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        grid-template-areas: "lokacija"
+            "telefon"
+            "mejl";
+    }
+
+    .col-sm-6 {
+        padding-right: 0;
+    }
+
+    #lokacija {
+        grid-area: lokacija;
+    }
+
+    #telefon {
+        grid-area: telefon;
+    }
+
+    #mejl {
+        grid-area: mejl;
+    }
+}

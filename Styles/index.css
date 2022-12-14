@@ -22,7 +22,7 @@
 
 
 body{
-    overflow-x:hidden ;
+    overflow-x:hidden;
     margin:0;
     font-family: 'Roboto Slab', serif;
     display: grid;
@@ -39,7 +39,8 @@ header{
     position: fixed;
     width:100vw;
     color: var(--glavnaBoja);
-    background-color: rgba(20,20,20,0.96);
+    background-color: rgba(20,20,20,0.9);
+    backdrop-filter: blur(0.25rem);
 }
 
 main{
@@ -222,7 +223,7 @@ footer{
 
     ::-webkit-scrollbar{
         width:10px;
-        background-color: rgba(20,20,20,0.96);
+        background-color: rgba(20,20,20,0.9);
     }
 
     ::-webkit-scrollbar-thumb{
