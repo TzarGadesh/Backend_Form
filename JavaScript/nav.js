@@ -10,7 +10,9 @@ function burgerClicked(){
 
     $(".nav-logo").toggleClass("donji-border");
     $(".nav-burger").toggleClass("donji-border");
-    $(".nav-menu").toggleClass("nav-menu-grid")
+    $(".nav-menu").toggleClass("nav-menu-grid");
+
+    $("body").toggleClass("body-grid");
 }
 
 // Klik na logo
@@ -18,9 +20,9 @@ $(".nav-logo").click(function(){
     let text = document.querySelector("#nav-oNama a").innerText;
 
     switch(text){
-        case "O NAMA": window.open("home.html","_self") 
+        case "O nama": window.open("home.html","_self") 
             break;
-        case "ABOUT": window.open("home-eng.html","_self")
+        case "About": window.open("home-eng.html","_self")
             break;
         case "ABOUT(RUS)": window.open("home-rus.html","_self")
             break;

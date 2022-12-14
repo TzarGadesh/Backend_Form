@@ -5,13 +5,20 @@
     background-position: right;
     margin-right: 25px;
 }
+h2{
+    font-size: 2.25rem;
+}
+
 .tekst1{
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
 }
+.tekst1 > p{
+    font-size: 1.5rem;
+}
 .brojac{
-    background-color:rgba(75, 86, 210,0.7);
+    background-color:var(--glavnaBoja);
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +29,9 @@
 }
 h3{
     color: rgb(20,20,20);
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
+    display: inline;
 }
 p{
    font-size: 1.5rem;
@@ -41,8 +49,60 @@ p{
     padding: 15px;
 }
 
+.brojac i {
+    font-size:2.5rem;
+}
 
-@media screen and (max-width: 1024px) {
+.pozadinska-boja{
+    background-color: rgba(4,75,161,0.3);
+}
+
+.izmedju{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(20,20,20);
+    padding-top: 40px;
+}
+.kartice{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px 20px 0;
+
+}
+
+.kartica{
+    margin: 20px;
+    padding: 15px;
+    background-color: var(--glavnaBoja);
+    border-radius: 7.5%;
+    border: 2px solid rgba(20,20,20,0.5);
+    font-size: 1.5rem;
+    display: grid;
+}
+h4{
+    font-size: 2.4rem;
+}
+.ikonica{
+    text-align: center;
+}
+.tekst{
+    text-align: center;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+@media screen and (max-width: 1050px) {
     .brojac{
         width: 100vw;
     }
@@ -56,8 +116,14 @@ p{
         width: 75%;
         height: 75%;
     }
+
+    .kartice{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 800px) {
     .brojac{
         width: 100vw;
         flex-wrap: wrap;
@@ -66,14 +132,19 @@ p{
         width: calc(100% - 30px);
     }
     .broj > p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .broj > h3{
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
     .broj > i {
         width: 50%;
         height: 50%;
+    }
+
+    .kartice{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 @media screen and (max-width: 480px) {
