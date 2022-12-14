@@ -252,30 +252,36 @@ footer{
     
 }
 
-
 /* FOOTER */
-.footer{
-    margin: 10px 5px;
+footer{
+    margin-top: 10px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(20,20,20);
+    color: var(--glavnaBoja);
+    }
+img{
+    width: 125px;
 }
-
 .socials{
     display: grid;
     grid-template-columns: 125px auto;
+    padding: 15px 10px 0px 10px;
+
 }
 .mreze{
    text-align: right;
    font-size: 30px;
+   align-self: flex-end;
 }
 .mreze .fal{
-padding: 5px;
+padding: 10px;
 }
 
 .kopirajt{
     text-align: center ;
+    align-self: flex-end;
 }
-
 @media (width<=340px){
     .socials{
         grid-template-columns: 1fr;
@@ -284,8 +290,8 @@ padding: 5px;
     .logof{
         display: grid;
         width: 125px;
-    justify-self: center;
-    align-self: center;
+        justify-self: center;
+        align-self: center;
     }
     .mreze{
         text-align: center;
