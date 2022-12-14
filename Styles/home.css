@@ -1,109 +1,141 @@
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.25rem;
+}
+h3{
+    font-size:  2.5rem;
+}
+h4{
+    font-size: 1.75rem;
+}
 .container1{
     height: 400px;
     background-image: url("/Slike/fejk-mapa.jpg");
     background-repeat: no-repeat;
     background-position: right;
     margin-right: 25px;
+    padding-bottom: 50px;
 }
-h2{
-    font-size: 3rem;
-}
-
 .tekst1{
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-}
-.tekst1 > p{
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 .brojac{
-    background-color:rgba(75, 86, 210,0.7);
+    background-color:var(--glavnaBoja);
     margin-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction:row;
-    justify-content: space-evenly;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:rgba(232, 224, 224, 0.95);
+
 }
-h3{
-    color: rgb(20,20,20);
-    font-size: 3.5rem;
-    text-align: center;
-}
-p{
-   font-size: 1.5rem;
-   color:rgb(20,20,20);
-}
-.brojac > p{
-    text-align: center; 
-}
+
 .broj{
-    margin: 15px;
     text-align: center;
     align-items: center;
 }
 .broj > i{
     padding: 15px;
+    font-size: 3rem;
 }
 
-
+.pozadinska-boja{
+    background-color: rgba(4,75,161,0.3);
+}
 .izmedju{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     border-top: 2px solid rgb(20,20,20);
+    padding-top: 40px;
+}
+.kartice{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px 20px 50px 0;
     padding-top: 25px;
 }
+.kartica{
+    display: grid;
+    margin: 15px;
+    background-color: var(--glavnaBoja);
+    border-radius: 25px;
+    border: 2px solid rgba(20,20,20,0.5);
+    cursor: pointer;
+    color:rgba(232, 224, 224, 0.9);
+}
+.kartica:hover{
+    background-color: rgba(4,75,161,0.7);
+    border: 2px solid rgba(20,20,20,0.5);   
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .6);
+    
+}
+.ikonica{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.tekst{
+    text-align: center;
+}
+.kontakt{
+    border-top: 2px solid rgba(20,20,20,0.5);
+    padding-top: 25px;
+    background-color: var(--glavnaBoja);
+    color:rgba(232, 224, 224, 0.9);
+}
+.kontakt i{
+    color: rgba(232, 224, 224, 0.9);
+    padding: 15px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
     .brojac{
         width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .broj>p{
-        font-size: 1.25rem;
-    }
-    .broj > h3{
-        font-size: 2rem;
-    }
-    .broj > i {
-        width: 75%;
-        height: 75%;
+    .kartice{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
     .brojac{
         width: 100vw;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .broj{
-        width: calc(100% - 30px);
-    }
-    .broj > p{
-        font-size: 1rem;
-    }
-    .broj > h3{
-        font-size: 1.75rem;
-    }
-    .broj > i {
-        width: 50%;
-        height: 50%;
+    .kartice{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .broj{
-        width: 100%;
-        font-size: 0.75rem;
+    .brojac{
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .broj > h3{
-        font-size: 1.25rem;
-    }
-    .broj > i {
-        width: 25%;
-        height: 25%;
+    .kartice{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
-

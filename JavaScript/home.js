@@ -22,7 +22,8 @@ valueDisplays.forEach((valueDisplay) => {
       
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+      
+      var elementVisible = 50;
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -33,6 +34,20 @@ valueDisplays.forEach((valueDisplay) => {
   }
   window.addEventListener("scroll", reveal);
   
-  function visitPage(){
-    window.location='usluge.html';
-  }
+  $('.kartica').click(function(){
+    
+    switch(this.innerText){
+      case "Drumski transport": window.open("usluge.html#drum-a", "_self")
+        break;
+      case "Avio transport": window.open("usluge.html#avio-a", "_self")
+        break;
+      case "Brodski transport": window.open("usluge.html#brod-a", "_self")
+        break;
+      case "Zbirni transport": window.open("usluge.html#zbirni-a", "_self")
+        break;
+      case "Usluge carinjenja": window.open("usluge.html#carina-a", "_self")
+        break;
+      case "Usluge skladištenja": window.open("usluge.html#skladiste-a", "_self")
+        break;
+    }
+  });
