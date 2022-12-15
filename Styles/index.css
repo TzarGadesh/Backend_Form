@@ -254,7 +254,6 @@ footer{
 
 /* FOOTER */
 footer{
-    margin-top: 10px;
     display: grid;
     grid-template-rows: auto 1fr;
     background-color: rgb(20,20,20);
