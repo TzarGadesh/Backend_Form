@@ -71,7 +71,10 @@ main img{
 
 @media (width <=700px){
     main .tekst{
-        font-size: 1rem;
+        font-size: 1.0rem;
+    }
+    main h3{
+        font-size: 1.5rem;
     }
    .drum{
     grid-template-columns: 1fr;

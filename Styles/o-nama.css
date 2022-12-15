@@ -1,17 +1,18 @@
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 1fr auto;
+    background-color: rgba(20, 20, 20, 0.3);
 }
 
 .tekst{
     grid-column: 2 / span 2;
     display: grid;
     grid-template-rows: auto;
-    margin: 10px 0px;
+    margin: 0px 0px;
     padding: 5px;
     font-size: 1.5rem;
-    
+    background-color: white;
 }
 .dugme{
     display: grid;
