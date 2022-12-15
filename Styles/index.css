@@ -254,15 +254,39 @@ footer{
     background-color: rgb(20,20,20);
     color: var(--glavnaBoja);
     }
-img{
+footer img{
     width: 125px;
+}
+.logof{
+align-self: center;
 }
 .socials{
     display: grid;
-    grid-template-columns: 125px auto;
+    grid-template-columns: 1fr auto 1fr;
     padding: 15px 10px 0px 10px;
-
 }
+.jezici{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.jezici img {
+    height: 25px;
+    width: 35px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.jezici img:hover{
+    border: 1px solid rgb(20,20,20);   
+    color: #fff;
+    box-shadow: 0 0 10px #09ccef, 0 0 20px , 0 0 30px #046570, 0 0 40px #010b0c,
+    0 0 50px rgb(13, 13, 13), 0 0 60px rgb(7, 7, 7);
+    opacity: 1;
+}
+
 .mreze{
    text-align: right;
    font-size: 30px;
@@ -274,13 +298,25 @@ padding: 10px;
 
 .kopirajt{
     text-align: center ;
-    align-self: flex-end;
+    align-self: end;
+    padding: 5px 0 10px;
 }
-@media (width<=340px){
+
+@media (width<=610px){
     .socials{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr;
     }
+    .jezici{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .jezici img{
+        margin: 10px 10px;
+    }
+   
     .logof{
         display: grid;
         width: 125px;
