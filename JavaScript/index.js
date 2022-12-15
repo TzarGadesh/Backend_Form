@@ -1,7 +1,24 @@
+
 animacijaLogo()
 
 function animacijaLogo(){
+
+    for(i = 0; i < 900;i++){
+        $(".crno-za-animaciju").css("transform", "translate(" + i+ "px)");
+    }
+
+    setTimeout(function(){
+        $("main").css("display","grid");
+        $(".loading").css("display","none");
+    },3000);
+    setTimeout(function(){
+        animacijaJezici()
+    },3750);
+    
+}
+function animacijaJezici(){
     $(".jezici").toggleClass("aktivan")
+    $(".logo-slika").toggleClass("aktivan")
 }
 $("button").click(function(){
     switch(this.attributes.id.value){
