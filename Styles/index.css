@@ -230,13 +230,6 @@ footer{
         background-color: var(--glavnaBoja); 
     }
 
-    body{
-        overflow-y: hidden;
-    }
-
-    body:active{
-        overflow-y: scroll;
-    }
 }
 
 /* Mobilni */
@@ -249,7 +242,9 @@ footer{
         width: calc(100vw / 3);
     }
 
-    
+    ::-webkit-scrollbar{
+        width:5px;
+    }
 }
 
 /* FOOTER */
