@@ -19,9 +19,12 @@
     </script>
     <!-- //css -->
     <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/kontakt.css">
     <!-- FontAwesome-->
     <script src="https://kit.fontawesome.com/bf4bc345b8.js" crossorigin="anonymous"></script>
-    <title>Iskon - Contact</title>
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/bf4bc345b8.js" crossorigin="anonymous"></script>
+    <title>Iskon - Kontakt</title>
 </head>
 
 <body>
@@ -36,22 +39,260 @@
 
         <div class="nav-menu">
             <div id="nav-oNama">
-                <a class="nav-link" href="o-nama-eng.html">About</a>
+                <a class="nav-link" href="o-nama.html">O nama</a>
             </div>
             <div id="nav-usluge">
-                <a class="nav-link" href="usluge-eng.html">Services</a>
+                <a class="nav-link" href="usluge.html">Usluge</a>
             </div>
             <div id="nav-kontakt">
-                <a class="nav-link" href="kontakt-eng.html">Contact</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
             </div>
             <div id="nav-upit">
-                <a class="nav-link" href="kontakt-eng.html#upit-anchor">Query</a>
+                <a class="nav-link" href="kontakt.html#upit-anchor">Upit</a>
             </div>
 
         </div>
     </header>
 
     <main>
+        <h1>Kontakt</h1>
+
+        <!---Prva Sekcija = Informacije--->
+        <section class="ikone">
+            <div class="container" id="sekcija1">
+                <div class="icon" id="lokacija">
+                    <i class="fa-solid fa-location-dot fa-3x"></i>
+                    <div class="tekst-ikonice">
+                        <p>Kancelarija: Belička 24</p>
+                        <p>Sedište: Ustanička 120</p>
+                    </div>
+                </div>
+                <div class="icon" id="telefon">
+                    <i class="fa-solid fa-phone fa-3x"></i>
+                    <div class="tekst-ikonice">
+                        <p>Telefon: 011 387151</p>
+                        <p>Telefon: 011 387161</p>
+                    </div>
+                </div>
+                <div class="icon" id="mejl">
+                    <i class="fa-solid fa-envelope fa-3x"></i>
+                    <div class="tekst-ikonice">
+                        <p>Mail: office@iskonbgd.rs</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!---Druga Sekcija = Avatari i licni podaci--->
+        <section class="avatari">
+            <div class="container " id="div-avatar">
+                <div class="row " id="div-avatari">
+                    <div class="col" id="col-avatari">
+                        <div class="avatar">
+                            <i class="avatar fa-sharp fa-solid fa-person fa-5x"></i>
+                        </div>
+                        <div class="tekst-avatari">
+                            <div class="ime">
+                                Vlada Milutinovic
+                            </div>
+                            <div class="pozicija">
+                                Direktor
+                            </div>
+                            <div class="broj">
+                                +38163341150
+                            </div>
+                            <div class="email">
+                                vlada.milutinovic@iskonbgd.rs
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col" id="col-avatari">
+                        <div class="avatar">
+                            <i class="avatar fa-sharp fa-solid fa-person-dress fa-5x"></i>
+                        </div>
+                        <div class="tekst-avatari">
+                            <div class="ime">
+                                Natasa Kostic
+                            </div>
+                            <div class="pozicija">
+                                Menadzer logistike
+                            </div>
+                            <div class="broj">
+                                +381694941689
+                            </div>
+                            <div class="email">
+                                natasa.kostic@iskonbgd.rs
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col" id="col-avatari">
+                        <div class="avatar">
+                            <i class="avatar fa-sharp fa-solid fa-person-dress fa-5x"></i>
+                        </div>
+                        <div class="tekst-avatari">
+                            <div class="ime">
+                                Katarina Filipovic
+                            </div>
+                            <div class="pozicija">
+                                Menadzer logistike
+                            </div>
+                            <div class="broj">
+                                +381646429270
+                            </div>
+                            <div class="email">
+                                katarina.filipovic@iskonbgd.rs
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="col-avatari">
+                        <div class="avatar">
+                            <i class="avatar fa-solid fa-person-dress fa-5x"></i>
+                        </div>
+                        <div class="tekst-avatari">
+                            <div class="ime">
+                                Aleksandra Milutinovic
+                            </div>
+                            <div class="pozicija">
+                                Finansije i administracija
+                            </div>
+                            <div class="broj">
+                                +381387161
+                            </div>
+                            <div class="email">
+                                aleksandra.milutinovic@iskonbgd.com
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!---Treca sekcija = Lokacija na mapi--->
+        <section class="mapa">
+            <div class="mapa text-center ">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Belička 24, Beograd&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 100%;
+                            height: 300px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 90%;
+                            height: 310px;
+                        }
+
+                        .gmap_iframe {
+                            height: 310px !important;
+                        }
+                    </style>
+                </div>
+            </div>
+        </section>
+
+        <!---Cetvrta sekcija = upit--->
+        <section class="forma">
+            <a name="upit-anchor">
+                <form action="https://formsubmit.co/vpetrovic596@gmail.com" method="POST" id="upit-anchor">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+
+                            <div class="card" id="desna">
+                                <div class="card-header">
+                                    <h3>Upit za transport</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="vrstaTransporta podaci-za-transport">
+                                        <select class="kucica" name="transport" id="izbor-transporta" required>
+                                            <option value="">--Vrsta transporta--</option>
+                                            <option value="avio">Avio</option>
+                                            <option value="brodski">Brodski</option>
+                                            <option value="drumski">Drumski</option>
+                                            <option value="zeleznicki">Zeleznicki</option>
+                                        </select>
+                                    </div>
+                                    <div class="mestoUtovara">
+                                        <input name="Mesto utovara" type="text" class="kucica" id="mestoUtovara"
+                                            placeholder="Mesto utovara" required>
+                                    </div>
+                                    <div class="mestoIstovara">
+                                        <input name="Mesto istovara" type="text" class="kucica" id="mestoIstovara"
+                                            placeholder="Mesto istovara" required>
+                                    </div>
+                                    <div class="podaciORobi">
+                                        <input name="Podaci o robi" type="text" class="kucica" id="podaciORobi"
+                                            placeholder="Podaci o robi" required>
+                                    </div>
+                                    <div class="ukupnaTezina">
+                                        <input name="Ukupna tezina(kg)" type="number" min="0" class="kucica"
+                                            id="ukupnaTezina" placeholder="Ukupna tezina (kg)" required>
+                                    </div>
+                                    <div class="dimezije">
+                                        <input name="Dimenzije" type="text" class="kucica" id="dimenzija"
+                                            placeholder="Dimenzije (D x S x V) " required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" id="leva">
+                                <div class="card-header">
+                                    <h3>Licni podaci</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="nazivFirme licni-podaci">
+                                        <input name="Naziv firme" type="name" class="kucica" id="nazivFirme"
+                                            placeholder="Naziv firme" required>
+                                    </div>
+                                    <div class="imePrezime">
+                                        <input name="Ime i prezime" type="name" class="kucica" id="imeIPrezime"
+                                            placeholder="Ime i Prezime" required>
+                                    </div>
+                                    <div class="telefon">
+                                        <input name="Telefon" type="number" class="kucica" id="Telefon"
+                                            placeholder="Telefon" required>
+                                    </div>
+                                    <div class="email">
+                                        <input name="email" type="email" class="kucica" id="email"
+                                            placeholder="E-mail (example@example.com)" required>
+                                    </div>
+                                    <div class="datumUtovara">
+                                        <input name="Datum utovara" type="text" class="kucica" id="datumUtovara"
+                                            placeholder="Datum utovara (dd/mm/gg)" required>
+                                    </div>
+                                    <div class="napomena">
+                                        <textarea name="Dodatna napomena" id="kucetina"
+                                            placeholder="Napomene:"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="sekcija-dugme">
+                        <div class="dugmad">
+                            <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">Posalji</button>
+                        </div>
+                    </section>
+                </form>
+            </a>
+        </section>
 
     </main>
 
@@ -60,14 +301,20 @@
             <div class="logof">
                 <img src="slike/logo.png" alt="">
             </div>
+            <div class="jezici">
+                <a href="kontakt.html"><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""></a>
+                <a href="kontakt-eng.html"><img class="eng" src="Slike/zastava-uk.png" alt=""></a>
+                <a href="kontakt-rus.html"><img class="rus" src="Slike/zastava-rusije.png" alt=""></a>
+            </div>
+
             <div class="mreze">
-                <a class="linkik"
+                <a class="linkik" target="_blank"
                     href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2F&trk=login_reg_redirect">
                     <i class="fa-brands fa-linkedin fal"></i></a>
-                <a class="linkik"
+                <a class="linkik" target="_blank"
                     href="https://www.facebook.com/campaign/landing.php?campaign_id=17872459883&extra_1=s%7Cc%7C613001324093%7Cb%7Cfacebook%20%27%7C&placement=&creative=613001324093&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D17872459883%26adgroupid%3D145027591568%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D2688%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2qKEkaj5-wIVBgOLCh1RPwJsEAAYASAAEgJ71vD_BwE"><i
                         class="fa-brands fa-facebook fal"></i></a>
-                <a class="linkik" href="https://www.instagram.com/accounts/login/"><i
+                <a class="linkik" target="_blank" href="https://www.instagram.com/accounts/login/"><i
                         class="fa-brands fa-instagram fal"></i></a>
             </div>
         </div>
@@ -76,6 +323,8 @@
     <!-- Jquery i JS za navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="Javascript/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="less.js"></script>
 </body>
 
 </html>

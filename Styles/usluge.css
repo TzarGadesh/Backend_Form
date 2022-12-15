@@ -70,6 +70,9 @@ main img{
 }
 
 @media (width <=700px){
+    main .tekst{
+        font-size: 1rem;
+    }
    .drum{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
