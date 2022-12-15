@@ -11,7 +11,7 @@ h4{
     font-size: 1.75rem;
 }
 .container1{
-    height: 400px;
+    height: 500px;
     background-image: url("/Slike/fejk-mapa.jpg");
     background-repeat: no-repeat;
     background-position: right;
@@ -25,27 +25,40 @@ h4{
     align-items: left;
     padding-top: 25px;
     padding-bottom: 50px;
+    padding-left: 25px ;
 }
 .brojac{
     background-color:var(--glavnaBoja);
     margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     color:rgba(232, 224, 224, 0.95);
-
+    min-height: 250px;
 }
 
 .broj{
     text-align: center;
     align-items: center;
+    padding-top: 50px;
+}
+.broj > h3{
+    display: inline;
 }
 .broj > i{
+    text-align: center;
+    align-items: center;
     padding: 15px;
     font-size: 3rem;
 }
 
-.pozadinska-boja{
-    background-color: rgba(4,75,161,0.3);
+.pozadinska-slika{
+    background-image: url("/Slike/usluge-3.jpeg");
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .izmedju{
     display: flex;
@@ -53,46 +66,59 @@ h4{
     align-items: center;
     border-top: 2px solid rgb(20,20,20);
     padding-top: 40px;
+    color: #000;
 }
 .kartice{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 25px 20px 50px 0;
-    padding-top: 25px;
+    row-gap: 35px;
+    column-gap: 35px;
+    padding: 25px 0 25px 0;
+    padding-top: 25px;  
+    /* backdrop-filter: blur(0.15rem); */
 }
 .kartica{
     display: grid;
-    margin: 15px;
-    background-color: var(--glavnaBoja);
+    margin: 15px;   
+    /* color: rgba(244, 230, 230); */
+    color: rgb(206, 231, 253);
+    background-color: rgba(20,20,20,0.95);
     border-radius: 25px;
     border: 2px solid rgba(20,20,20,0.5);
     cursor: pointer;
-    color:rgba(232, 224, 224, 0.9);
+    min-height: 275px;
+    min-width: 275;
 }
 .kartica:hover{
-    background-color: rgba(4,75,161,0.7);
-    border: 2px solid rgba(20,20,20,0.5);   
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .6);
-    
+    border: 2px solid rgb(20,20,20);   
+    color: #fff;
+    box-shadow: 0 0 10px #daeaed, 0 0 20px , 0 0 30px #daebed, 0 0 40px #010b0c,
+    0 0 50px rgb(13, 13, 13), 0 0 60px rgb(7, 7, 7);
+    opacity: 0.9;    
 }
 .ikonica{
     text-align: center;
-    font-size: 3.5rem;
+    padding: 20px;
+    font-size: 5rem;
 }
 .tekst{
     text-align: center;
+    padding-bottom: 50px;
 }
 .kontakt{
     border-top: 2px solid rgba(20,20,20,0.5);
     padding-top: 25px;
     background-color: var(--glavnaBoja);
     color:rgba(232, 224, 224, 0.9);
+    font-size: 1.5rem;
 }
 .kontakt i{
     color: rgba(232, 224, 224, 0.9);
     padding: 15px;
+    font-size: 3.5rem;
 }
+
 .reveal{
     position: relative;
     transform: translateY(150px);
