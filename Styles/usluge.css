@@ -1,17 +1,20 @@
 
 html, body{
-    background-color: antiquewhite
+    background-color: #fff
 }
 
 .slika{
     margin: 10px;
 }
-.main{
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: #472183;
-}
 
+main{
+    padding: 10px 40px;
+}
+.kont{
+    border-bottom: 4px solid var(--glavnaBoja);
+    border-radius: 7px;
+
+}
 .uvod{
     margin: 10px 5px;
     padding: 5px;
@@ -45,7 +48,7 @@ html, body{
     display: grid;
     align-self: center;
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.75vw;
     padding: 0 10px;
 }
 
@@ -56,9 +59,11 @@ html, body{
 h3{
     font-size: 3vw;
     font-weight: 800;
+    text-align: center;
 }
 img{
     width: 100%;
+    border-radius: 20px;
 }
 .sd{
     display: grid;
