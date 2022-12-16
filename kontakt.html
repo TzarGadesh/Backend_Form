@@ -58,30 +58,30 @@
         <h1>Kontakt</h1>
 
         <!---Prva Sekcija = Informacije--->
-        <section class="ikone">
-            <div class="container" id="sekcija1">
-                <div class="icon" id="lokacija">
-                    <i class="fa-solid fa-location-dot fa-3x"></i>
-                    <div class="tekst-ikonice">
-                        <p>Kancelarija: Belička 24</p>
-                        <p>Sedište: Ustanička 120</p>
-                    </div>
+        <!---Prva Sekcija = Informacije--->
+    <section class="ikone">
+        <div class="container" id="sekcija1">
+            <div class="icon" id="lokacija">
+                <i class="fa-solid fa-location-dot fa-3x" id="slikica"></i>
+                <div class="tekst-ikonice">
+                    <p>Kancelarija: Belička 24</p>
+                    <p>Sedište: Ustanička 120</p>
                 </div>
-                <div class="icon" id="telefon">
-                    <i class="fa-solid fa-phone fa-3x"></i>
-                    <div class="tekst-ikonice">
-                        <p>Telefon: 011 387151</p>
-                        <p>Telefon: 011 387161</p>
-                    </div>
-                </div>
-                <div class="icon" id="mejl">
-                    <i class="fa-solid fa-envelope fa-3x"></i>
-                    <div class="tekst-ikonice">
-                        <p>Mail: office@iskonbgd.rs</p>
-                    </div>
-                </div>
-
             </div>
+            <div class="icon" id="telefon">
+                <i class="fa-solid fa-phone fa-3x" id="slikica"></i>
+                <div class="tekst-ikonice">
+                    <p>Telefon: 011 387151</p>
+                    <p>Telefon: 011 387161</p>
+                </div>
+            </div>
+            <div class="icon" id="mejl">
+                <i class="fa-solid fa-envelope fa-3x" id="slikica"></i>
+                <div class="tekst-ikonice">
+                    <p>Mail: office@iskonbgd.rs</p>
+                </div>
+            </div>
+
         </section>
 
         <!---Druga Sekcija = Avatari i licni podaci--->
@@ -106,26 +106,30 @@
                                 vlada.milutinovic@iskonbgd.rs
                             </div>
 
-                        </div>
-                    </div>
 
-                    <div class="col" id="col-avatari">
-                        <div class="avatar">
-                            <i class="avatar fa-sharp fa-solid fa-person-dress fa-5x"></i>
-                        </div>
-                        <div class="tekst-avatari">
-                            <div class="ime">
-                                Natasa Kostic
-                            </div>
-                            <div class="pozicija">
-                                Menadzer logistike
-                            </div>
-                            <div class="broj">
-                                +381694941689
-                            </div>
-                            <div class="email">
-                                natasa.kostic@iskonbgd.rs
-                            </div>
+        </div>
+    </section>
+
+    
+        <!---Druga Sekcija = Avatari i licni podaci--->
+         <!---Druga Sekcija = Avatari i licni podaci--->
+    <section class="avatari">
+        <div class="container" id="sekcija2">
+            <div class="avatar" id="vlada">
+                <div class="ikonica">
+                    <i class="avatar fa-sharp fa-solid fa-person fa-3x"></i>
+                </div>
+                <div class="avatar-tekst">
+                    <p>Vlada Milutinović,</p>
+                    <p>Direktor</p>
+                    <p>+38163341150</p>
+                    <p>vlada.milutinovic@iskonbgd.rs</p>
+
+                </div>
+            </div>
+            <div class="avatar"  id="natasa">
+                <div class="ikonica">
+                    <i class="avatar fa-sharp fa-solid fa-person-dress fa-3x"></i>
 
 
                         </div>
@@ -167,13 +171,31 @@
                             <div class="email">
                                 aleksandra.milutinovic@iskonbgd.com
                             </div>
+                </div>
+                <div class="avatar-tekst">
+                    <p>Nataša Kostić,</p>
+                    <p>Menadzer logistike</p>
+                    <p>+381694941689</p>
+                    <p>natasa.kostic@iskonbgd.rs</p>
 
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="avatar" id="katarina">
+                <div class="ikonica">
+                    <i class="avatar fa-solid fa-person-dress fa-3x"></i>
 
-        </section>
+                </div>
+                <div class="avatar-tekst">
+                    <p>Katarina Filipović,</p>
+                    <p>Menadzer logistike</p>
+                    <p>+381646429270</p>
+                    <p> katarina.filipovic@iskonbgd.rs</p>
+                </div>
+            </div>  
+            <div class="avatar" id="aleksandra">
+                <div class="ikonica">
+                    <i class="avatar fa-solid fa-person-dress fa-3x"></i>
+
 
         <!---Treca sekcija = Lokacija na mapi--->
         <section class="mapa">
@@ -190,25 +212,58 @@
                             width: 100%;
                             height: 300px;
                         }
+                </div>
+                <div class="avatar-tekst">
+                    <p>Aleksandra Milutinović,</p>
+                    <p> Finansije i administracija</p>
+                    <p> Telefon: 011 387151</p>
+                    <p>aleksandra.milutinovic@iskonbgd.com</p>
 
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            width: 90%;
-                            height: 310px;
-                        }
 
-                        .gmap_iframe {
-                            height: 310px !important;
-                        }
-                    </style>
+
                 </div>
             </div>
+
         </section>
 
+
+        </div>
+    </section>
+<!---Treca sekcija = Lokacija na mapi--->
+<section class="mapa">
+    <div class="mapa text-center ">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Belička 24, Beograd&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                 </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 90%;
+                    height: 310px;
+                }
+
+                .gmap_iframe {
+                    height: 310px !important;
+                }
+            </style>
+        </div>
+    </div>
+</section>
+        
         <!---Cetvrta sekcija = upit--->
-        <section class="forma">
+        <section class="from">
             <a name="upit-anchor">
+
                 <form action="https://formsubmit.co/vpetrovic596@gmail.com" method="POST" id="upit-anchor">
                     <div class="row">
 
@@ -249,48 +304,77 @@
                                             placeholder="Dimenzije (D x S x V) " required>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card" id="leva">
-                                <div class="card-header">
-                                    <h3>Licni podaci</h3>
-                                </div>
-                                <div class="card-body">
-                                    <div class="nazivFirme licni-podaci">
-                                        <input name="Naziv firme" type="name" class="kucica" id="nazivFirme"
-                                            placeholder="Naziv firme" required>
-                                    </div>
-                                    <div class="imePrezime">
-                                        <input name="Ime i prezime" type="name" class="kucica" id="imeIPrezime"
-                                            placeholder="Ime i Prezime" required>
-                                    </div>
-                                    <div class="telefon">
-                                        <input name="Telefon" type="number" class="kucica" id="Telefon"
-                                            placeholder="Telefon" required>
-                                    </div>
-                                    <div class="email">
-                                        <input name="email" type="email" class="kucica" id="email"
-                                            placeholder="E-mail (example@example.com)" required>
-                                    </div>
-                                    <div class="datumUtovara">
-                                        <input name="Datum utovara" type="text" class="kucica" id="datumUtovara"
-                                            placeholder="Datum utovara (dd/mm/gg)" required>
-                                    </div>
-                                    <div class="napomena">
-                                        <textarea name="Dodatna napomena" id="kucetina"
-                                            placeholder="Napomene:"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <form action="https://formsubmit.co/vpetrovic596@gmail.com" method="POST" id="upit-anchor">
+    
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Informacije o transportu</h3>
                     </div>
-                    <section class="sekcija-dugme">
-                        <div class="dugmad">
-                            <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">Posalji</button>
+                    <div class="container card-body" id="kartica">
+    
+                        <div class="meso">
+                            <h4>Podaci o transportu</h4>
+                            <div class="vrstaTransporta podaci-za-transport">
+                                <select class="kucica" name="transport" id="izbor-transporta" required>
+                                    <option value="">--Vrsta transporta--</option>
+                                    <option value="avio">Avio</option>
+                                    <option value="brodski">Brodski</option>
+                                    <option value="drumski">Drumski</option>
+                                    <option value="zeleznicki">Zeleznicki</option>
+                                </select>
+                            </div>
+                            <div class="mestoUtovara">
+                                <input type="text" class="kucica" id="mestoUtovara" placeholder="Mesto utovara" required>
+                            </div>
+                            <div class="mestoIstovara">
+                                <input type="text" class="kucica" id="mestoIstovara" placeholder="Mesto istovara" required>
+                            </div>
+                            <div class="podaciORobi">
+                                <input type="text" class="kucica" id="podaciORobi" placeholder="Podaci o robi" required>
+                            </div>
+                            <div class="ukupnaTezina">
+                                <input type="number" min="0" class="kucica" id="ukupnaTezina"
+                                    placeholder="Ukupna tezina (kg)" required>
+                            </div>
+                            <div class="dimezije">
+                                <input type="text" class="kucica" id="dimenzija" placeholder="Dimenzije (D x S x V) "
+                                    required>
+
+                            </div>
                         </div>
-                    </section>
-                </form>
+                        <div class="meso">
+                            <h4>Podaci o naručiocu</h4>
+                            <div class="nazivFirme licni-podaci">
+                                <input type="name" class="kucica" id="nazivFirme" placeholder="Naziv firme" required>
+                            </div>
+                            <div class="imePrezime">
+                                <input type="name" class="kucica" id="imeIPrezime" placeholder="Ime i Prezime" required>
+                            </div>
+                            <div class="telefon">
+                                <input type="text" class="kucica" id="Telefon" placeholder="Telefon" required>
+                            </div>
+                            <div class="email">
+                                <input type="email" class="kucica" id="email" placeholder="E-mail (example@example.com)"
+                                    required>
+                            </div>
+                            <div class="datumUtovara">
+                                <input type="text" class="kucica" id="datumUtovara" placeholder="Datum utovara (dd/mm/gg)"
+                                    required>
+                            </div>
+                            <div class="napomena">
+                                <textarea name="dodatnaNapomena" id="kucetina" placeholder="Napomene:"></textarea>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <section class="sekcija-dugme">
+                    <div class="dugmad">
+                        <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">Posalji</button>
+                    </div>
+                </section>
+            </form>
             </a>
         </section>
 
