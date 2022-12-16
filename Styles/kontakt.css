@@ -1,14 +1,17 @@
 
+main body {
+    color: rgb(20, 20, 20);
+    overflow-x: hidden;
+}
+
 /*Divovi*/
 
-main div {
+div {
+
     margin-top: 10px;
     text-align: center;
 }
 
-main{
-    overflow-x: hidden;
-}
 
 
 .col {
@@ -19,10 +22,6 @@ main{
 .avatari {
     background-color: #4B56D2;
 
-}
-
-#sekcija1{
-    margin-top: 50px;
 }
 
 .card-body {
@@ -36,11 +35,14 @@ main{
 h1 {
     text-align: center;
     color: #4B56D2;
+    margin-top: 20px;
 }
 
 #sekcija1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+
 }
 
 
@@ -61,27 +63,44 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#slikica:hover{
+    color: rgb(20, 20, 20);
+}
+
 
 /*Druga sekcija*/
-.avatar {
-    color: white;
-}
-
-.tekst-avatari {
-    color: white;
-    padding: 2px;
 
 
+
+#sekcija2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 
-#col-avatari {
-    min-width: 451px;
+#avatari-teskt {
     text-align: center;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.ikonica {
+    color: white;
+    text-align: center;
+}
+
+.avatar-tekst {
+    text-align: center;
+    color: white;
+}
+
+.avatar {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.avatari {
+    background-color: mediumslateblue;
+    margin: 0 0 0 0;
 }
 
 /* Treca sekcija*/
@@ -96,28 +115,27 @@ h1 {
     margin-bottom: 85px;
     padding: 100px;
 }
-
 /*Cetvrta sekcija*/
 
+#kartica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
 .card-header {
+    text-align: center;
     background-color: #4B56D2;
-    margin: 0;
     color: white;
 }
 
-.card-body{
-
-    height: 300px;
-}
-.forma {
-    background-color: white;
-}
 
 .kucica {
-    width: 80%;
+    width: 100%;
     text-align: left;
     border: 2px solid #4B56D2;
     border-radius: 5px;
+    margin: 5px 5px;
 }
 
 .kucica:focus {
@@ -125,18 +143,22 @@ h1 {
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-#selection {
-    height: 32px;
+.card {
+
+    margin-right: 2px;
+    margin-left: 2px;
+  
 }
 
 #kucetina {
-    width: 80%;
+    width: 100%;
     height: 30px;
     text-align: left;
     border: 2px solid #4B56D2;
     border-radius: 5px;
     min-height: 30px;
     max-height: 75px;
+    margin: 5px;
 }
 
 #kucetina:focus {
@@ -144,47 +166,75 @@ h1 {
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-#desna {
-    margin-left: 10px;
+
+.dugmad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-
-
-.forma{
-    margin-bottom: 40px;
-}
-
-.napomena{
-    height:30px;
-}
-
-@media (width<=575px) {
-    #desna {
-        margin-right: 0;
-    }
-
-    #leva {
-        margin-left: 0;
-    }
-
-}
-
-/* Peta sekcija - Dugme*/
 .dugme {
     background-color: #4B56D2;
     border: 2px solid #472183;
     color: white;
     padding: 15px 32px;
+    margin-top: 15px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .dugme:hover {
     background-color: #472183;
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1200px) {
+
+
+    #sekcija2 {
+
+
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-row-gap: 40px;
+
+
+    }
+
+    .avatar-tekst{
+        font-size: large;
+    }
+
+}
+
+@media(max-width: 499px) {
+
+    #sekcija2 {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-columns: 1fr;
+
+        grid-row-gap: 40px;
+
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    #kartica {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 50px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -238,4 +288,37 @@ h1 {
     #mejl {
         grid-area: mejl;
     }
+}
+
+
+@media (max-width: 880px) {
+
+
+    #sekcija2 {
+
+
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-row-gap: 40px;
+
+
+    }
+
+
+}
+
+@media(max-width: 499px) {
+
+    #sekcija2 {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-columns: 1fr;
+
+        grid-row-gap: 40px;
+
+    }
+
+
 }
