@@ -6,7 +6,7 @@ main body {
 
 /*Divovi*/
 
-div {
+main div {
 
     margin-top: 10px;
     text-align: center;
@@ -190,6 +190,10 @@ h1 {
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
+.container{
+    padding-inline: 0;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -212,19 +216,7 @@ h1 {
 
 }
 
-@media(max-width: 499px) {
 
-    #sekcija2 {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-
-        grid-template-columns: 1fr;
-
-        grid-row-gap: 40px;
-
-    }
-
-
-}
 
 @media (max-width: 800px) {
 
@@ -263,7 +255,18 @@ h1 {
     }
 }
 
-@media (max-width: 400px) {
+
+@media(max-width: 499px) {
+
+    #sekcija2 {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        grid-template-columns: 1fr;
+
+        grid-row-gap: 40px;
+
+    }
+
     #sekcija1 {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -288,6 +291,8 @@ h1 {
     #mejl {
         grid-area: mejl;
     }
+
+
 }
 
 
@@ -303,20 +308,6 @@ h1 {
 
         grid-row-gap: 40px;
 
-
-    }
-
-
-}
-
-@media(max-width: 499px) {
-
-    #sekcija2 {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-
-        grid-template-columns: 1fr;
-
-        grid-row-gap: 40px;
 
     }
 
