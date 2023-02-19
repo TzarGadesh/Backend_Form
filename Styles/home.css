@@ -10,31 +10,30 @@ h3{
 h4{
     font-size: 1.75rem;
 }
-.container1{
-    height: 500px;
-    background-image: url("/Slike/fejk-mapa.jpg");
+.container1{    
+    background-image: url("/Slike/mapa.svg");
+    background-color: rgba(20,20,20,0.15);
     background-repeat: no-repeat;
+    background-size: 70%;
     background-position: right;
-    margin-right: 25px;
-    padding-bottom: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    z-index: 0;
 }
 .tekst1{
+    z-index: 1;
+    color: var(--glavnaBoja);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    padding-left: 25px ;
+    padding:0 0 50px 150px; 
 }
 .brojac{
-    background-color:var(--glavnaBoja);
-    margin-top: 25px;
+    margin-bottom: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    color:rgba(232, 224, 224, 0.95);
-    min-height: 250px;
+    color: var(--glavnaBoja);
 }
 
 .broj{
@@ -44,12 +43,13 @@ h4{
 }
 .broj > h3{
     display: inline;
+    font-size: 2rem;
 }
 .broj > i{
     text-align: center;
     align-items: center;
-    padding: 15px;  
-    font-size: 3rem;
+    padding: 10px;  
+    font-size: 2.25rem;
 }
 
 .pozadinska-slika{
@@ -66,7 +66,7 @@ h4{
     align-items: center;
     border-top: 2px solid rgb(20,20,20);
     padding-top: 40px;
-    color: #000;
+    color: var(--glavnaBoja);
 }
 .kartice{
     display: grid;
@@ -82,10 +82,10 @@ h4{
     display: grid;
     margin: 15px;   
     /* color: rgba(244, 230, 230); */
-    color: rgb(206, 231, 253);
-    background-color: rgba(20,20,20,0.95);
-    border-radius: 25px;
-    border: 2px solid rgba(20,20,20,0.5);
+    color: #ffffff;
+    background-color: var(--glavnaBoja);
+    border-radius: 12.5px;
+    border: 1px solid rgba(20,20,20,0.5);
     cursor: pointer;
     min-height: 275px;
     min-width: 275;
