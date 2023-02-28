@@ -345,7 +345,9 @@ main div {
             "telefon"
             "mejl";
     }
-
+    #sekcija1 > i{
+        font-size: 1.05rem;
+    }
     .col-sm-6 {
         padding-right: 0;
     }

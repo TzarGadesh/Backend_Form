@@ -30,6 +30,7 @@ hr{
     background-image: url("https://static.vecteezy.com/system/resources/previews/003/462/048/large_2x/business-partnership-meeting-concept-and-business-handshake-free-photo.jpg");
     background-size: cover;
     background-position: center;
+    text-align: center ;
 }
 .pocetni-slika{
     width:100%;
@@ -61,7 +62,7 @@ hr{
     flex-direction: row;
     margin: 5%;
     justify-content: center;
-    gap: 4.5rem;
+    gap: 3rem;
 }
 
 .clan > h3{
@@ -149,3 +150,102 @@ hr{
     float: right;
 }
  */
+@media (max-width:1200px){
+
+    .pocetni-deo{
+        min-height: 60vw;
+    }
+    main{
+        overflow: hidden;
+    }
+    .timski-deo>hr{
+        width: 350px;
+    }
+    .timski-deo > h2{
+        font-weight: 700;
+        font-size: 2.15rem;
+    }
+    .clanovi-tima{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5%;
+        justify-content: center;
+        gap: 1.15rem;
+    }
+    
+    .clan > h3{
+        margin: 1.5rem 0 0.75rem;
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+    .clan > p{
+        font-size: 1.35rem;
+    }
+    
+
+}
+@media (max-width:700px){
+
+    .pocetni-deo{
+        min-height: 70vw;
+    }
+
+    .pocetni-deo h1{
+        font-size:3.5rem;
+        z-index: 5;
+    }
+
+    .pocetni-deo h2{
+        font-size:1.5rem;
+        z-index: 5;
+    }
+
+    .pocetni-slika{
+        background: linear-gradient(
+        hsl(0 0% 0%/0),
+        hsl(20 0% 0%/0.15) 50%,
+        hsl(40 0% 0%/0.4) 85%,   
+        hsl(0 0% 0%/1)
+        ); 
+    }
+
+    .clanovi-tima{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 5%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .clan > h3{
+        margin: 1.5rem 0 0.75rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .clan > p{
+        font-size: 1.25rem;
+    }
+    .clan>img{
+        width:100px;
+        height: 100px;
+    }
+    .faq-deo>h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .pocetni-deo{
+        min-height:75vw;
+    }
+
+    .pocetni-deo h1{
+        font-size:2.75rem;
+    }
+
+    .pocetni-deo h2{
+        font-size: 1.25rem;
+    }
+}

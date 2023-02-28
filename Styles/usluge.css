@@ -9,6 +9,7 @@ html, body{
     margin-right: auto;
     text-align: center;
     padding-bottom: 2.5rem;
+    width: fit-content;
 }
 .usluge-naslov{
     font-size: 3.25rem;
@@ -87,12 +88,24 @@ main img{
     border-top: 3px solid rgba(0,0,0,0.8);
 }
 
-@media (width <=700px){
+@media (width <=900px){
+    #naslovni{
+        width: 210px;
+    }
+    .usluge-naslov{
+        font-size: 2.5rem;
+    }
+    .naslov{
+        width: fit-content;
+    }
     main .tekst{
         font-size: 1.0rem;
     }
     main h3{
         font-size: 1.5rem;
+    }
+    .tekst>p{
+        padding: 0 10px;
     }
    .drum{
     grid-template-columns: 1fr;
@@ -157,5 +170,11 @@ main img{
     .uvod{
         margin: 10px 5px;
         padding: 5px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:900px){
+    
+    .tekst>p{
+        font-size: 1.35rem;
     }
 }

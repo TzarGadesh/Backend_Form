@@ -263,7 +263,7 @@ footer{
 }
 
 /* FOOTER */
-/* FOOTER */
+
 footer {
     display: grid;
     background-color: #001e51;
@@ -353,7 +353,7 @@ footer {
     padding: 5px 0 10px;
   }
   
-  @media (width<=830px) {
+  @media (width<=1000px) {
     footer .info {
       display: grid;
       grid-template-columns: none;

@@ -56,7 +56,8 @@ main{
     flex-direction: row;
     width:85%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap:12.5%;
     transition:3500s ease-in;
     opacity: 0;
 }
@@ -76,16 +77,16 @@ main{
 }
 
 .dugme-jezik{
-    width:250px;
-    height:200px;
-    border-radius:15%;
-    border:5px solid black;
+    width:200px;
+    height:150px;
+    border-radius:2.5%;
+    border:2.5px solid black;
     padding:0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 15px;
-    box-shadow:6px 6px rgba(0,0,0,0.5);
+    box-shadow:3px 3px rgba(0,0,0,0.5);
 }
 
 .dugme-jezik:hover{
