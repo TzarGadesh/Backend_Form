@@ -1,7 +1,19 @@
 html, body{
-    background-color: #fff
+    background-color:var(--pozadinska);
+    font-family: 'Titillium web', sans-serif;
 }
-
+.naslov{
+    color: black;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.usluge-naslov{
+    font-size: 3.25rem;
+    font-weight: 800;
+}
 .slika{
     margin: 10px;
 }
@@ -10,9 +22,8 @@ main{
     padding: 10px 40px;
 }
 .kont{
-    border-bottom: 4px solid var(--glavnaBoja);
-    border-radius: 7px;
-
+    border-bottom: 3px solid rgba(0,0,0,0.8);
+    border-radius: 0px;
 }
 .uvod{
     margin: 10px 5px;
@@ -62,11 +73,14 @@ h3{
 }
 main img{
     width: 100%;
-    border-radius: 20px;
 }
 .sd{
     display: grid;
     justify-self: end;
+}
+
+#drum-a{
+    border-top: 3px solid rgba(0,0,0,0.8);
 }
 
 @media (width <=700px){

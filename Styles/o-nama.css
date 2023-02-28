@@ -1,26 +1,170 @@
+:root {
+    --glavnaBoja: #003da6;
+    --pozadinska: rgb(225, 239, 255);
+}
 main{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr auto;
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: var(--pozadinska);
+}
+hr{
+    color: #010b0c;
+    width: 29.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#faq-hr{
+    color: #010b0c;
+    width: 42.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pocetni-deo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    min-height: 65ch;
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/462/048/large_2x/business-partnership-meeting-concept-and-business-handshake-free-photo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.pocetni-slika{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: linear-gradient(
+        hsl(0 0% 0%/0),
+        hsl(20 0% 0%/0.2) 50%,
+        hsl(40 0% 0%/0.4) 75%,   
+        hsl(0 0% 0%/1)
+        ); 
+    font-size: 0;
+}
+.pocetni-deo > h1{
+    font-size: 4.25rem;
 }
 
-.tekst{
-    grid-column: 2 / span 2;
-    display: grid;
-    grid-template-rows: auto;
-    margin: 0px 0px;
-    padding: 5px;
-    font-size: 1.5rem;
-    background-color: white;
+/* SEKCIJA CLANOVI TIMA */
+
+.timski-deo{
+    text-align: center;
 }
-.dugme{
-    display: grid;
-    grid-row: 2;
-    grid-column: 2 / span 2;
+.timski-deo > h2{
+    font-weight: 700;
+    font-size: 2.75rem;
+}
+.clanovi-tima{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    justify-content: center;
+    gap: 4.5rem;
 }
 
-.txt{
-    margin: 5px 0;
-    padding: 5px 5px;
+.clan > h3{
+    margin: 1.5rem 0 0.75rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+.clan > p{
+    font-size: 1.25rem;
+}
+.clan>img{
+    border: 1px solid black;
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    background-color: #adadad;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(350px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.prvi{
+    transition-delay: 200ms;
+}
+.drugi{
+    transition-delay: 400ms;
+}
+.treci{
+    transition-delay: 600ms;
+}
+.cetvrti{
+    transition-delay: 800ms;
+}
+
+
+/* SEKCIJA FAQ */
+
+.faq-deo > h2{
+    margin: 1.5rem 0 0.75rem;
+    font-weight: 700;
+    font-size: 2.75rem;
+    text-align: center;
+}
+.pitanja{
+    display: flex;
+    flex-direction: column;
+}
+.pitanje{
+    position: relative;
+    border: 2px solid var(--pozadinska);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.5rem 1.25rem;
+    margin:1rem 10%;
+    transition: 500ms;
+    background-color: var(--glavnaBoja);
+    color:white;
+}
+
+.pitanje h3{
+    display: inline;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.odgovor{
+    position: absolute;
+    transform: translateY(-100%);
+    visibility: hidden;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.pitanje span{
+    font-size: 2.25rem;
+    background-color: green;
+    width:15px;
+    height: 15px;
+    border: 1px solid green;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.nepar{
+    align-self: flex-end;
+    text-align: right;
+}
+
+.spusten-odgovor{
+    transition: 500ms;
+    position:relative;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.nepar .spusten-odgovor{
+    text-align: left;
 }

@@ -1,27 +1,25 @@
 
 main body {
-    color: rgb(20, 20, 20);
-    overflow-x: hidden;
+    color: val(--pozadinska);
+    /* overflow-x: hidden; */
 }
 
 /*Divovi*/
 
 main div {
-
     margin-top: 10px;
-    text-align: center;
 }
 
-
+.horizont{
+    color: #010b0c;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .col {
     min-width: 200px;
     text-align: center;
-}
-
-.avatari {
-    background-color: #4B56D2;
-
 }
 
 .card-body {
@@ -32,25 +30,41 @@ main div {
     margin-right: 0;
 }
 
-h1 {
+.naslov{
     text-align: center;
-    color: #4B56D2;
+    color: var(--glavnaBoja);
     margin-top: 20px;
+    font-weight: 900;
+    font-size: 3.5rem;
 }
 
-#sekcija1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 40px;
 
-}
 
 
 
 /*Ikonice*/
+
+
+#sekcija1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ikone{
+    padding:40px 0 30px;
+
+}
 .icon {
-    color: #4B56D2;
-    margin-bottom: 1rem;
+    color: var(--glavnaBoja);
+    max-height: 125px;
+    margin:0;
+    text-align: center;
+}
+.glavne-ikone{
+    margin-top: 5%;
+}
+.icon i{
+    font-size: 3.25rem;
 }
 
 
@@ -58,15 +72,19 @@ h1 {
     width: 100%;
 }
 
-.ikonice {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.tekst-ikonice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.75rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
 }
 
-#slikica:hover{
-    color: rgb(20, 20, 20);
+.tekst-ikonice p{
+    margin:0;
 }
-
 
 /*Druga sekcija*/
 
@@ -75,7 +93,7 @@ h1 {
 #sekcija2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    background-color: var(--glavnaBoja);
 }
 
 #avatari-teskt {
@@ -99,66 +117,94 @@ h1 {
 }
 
 .avatari {
-    background-color: mediumslateblue;
+    background-color: var(--glavnaBoja);
     margin: 0 0 0 0;
 }
 
 /* Treca sekcija*/
 .mapa{
-    display: grid;
+    padding: 15px 0;
 }
 
-.mapouter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 85px;
-    padding: 100px;
+.mapouter {
+    position: relative;
+    width: 100%;
 }
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .gmap_iframe {
+    height: 400px !important;
+    border-radius: 20px;
+  }
+
 /*Cetvrta sekcija*/
 
 #kartica {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content:center ;
 }
 
-.card-header {
+.meso{
+    min-width: 350px;
+    padding: 5px 5px;
+    margin:10px;
     text-align: center;
-    background-color: #4B56D2;
+}
+
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--glavnaBoja);
     color: white;
+    margin-top: 0px;
+}
+
+.card-header h3{
+    margin: 0;
 }
 
 
 .kucica {
     width: 100%;
     text-align: left;
-    border: 2px solid #4B56D2;
+    border: 2px solid var(--glavnaBoja  );
     border-radius: 5px;
-    margin: 5px 5px;
+    height: 40px;
+    padding: 7px 7px;
 }
 
 .kucica:focus {
-    border: 3px solid #472183;
+    border: 3px solid var(--glavnaBoja);
     box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-.card {
+.card{
+    margin-top:0;
+}
 
-    margin-right: 2px;
-    margin-left: 2px;
-  
+.from{
+    margin: 2.5% 7.5% 5%;
 }
 
 #kucetina {
     width: 100%;
-    height: 30px;
+    min-height: 40px;
+    height: 40px;
     text-align: left;
     border: 2px solid #4B56D2;
     border-radius: 5px;
-    min-height: 30px;
-    max-height: 75px;
-    margin: 5px;
+    padding: 7px 7px;
 }
 
 #kucetina:focus {
@@ -171,27 +217,36 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin:0 0 15px;
 }
 
 .dugme {
-    background-color: #4B56D2;
-    border: 2px solid #472183;
+    background-color: var(--glavnaBoja);
+    border: 0.5px solid white;
     color: white;
     padding: 15px 32px;
     margin-top: 15px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .dugme:hover {
-    background-color: #472183;
-    box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid var(--glavnaBoja);
+    background-color: white;
+    color: var(--glavnaBoja);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1); */
+    background-color: var(--glavnaBoja);
+    color:#ffffff;
+    outline: 0.5px solid white;
+    box-shadow: 0 0 3px #f9f9f9, 0 0 6px #00389c,
+    0 0 9px #00298d, 0 0 12px var(--glavnaBoja);
 }
 
 .container{
     padding-inline: 0;
+    color:var(--glavnaBoja);
 }
 
 
@@ -226,7 +281,27 @@ h1 {
         grid-template-columns: 1fr 1fr;
 
         grid-row-gap: 40px;
+    }
 
+    .icon i{
+        font-size: 2.5rem;
+    }
+
+    .icon{
+        max-height: 100px;
+    }
+
+    .ikone{
+        padding:0 0 10px;
+    }
+    
+    .tekst-ikonice{
+        margin-top:0.5rem;
+        gap:0.4rem;
+    }
+
+    .gmap_canvas {
+        width:85%;
     }
 
 }
@@ -236,19 +311,19 @@ h1 {
 @media (max-width: 800px) {
 
     #kartica {
-
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 50px;
+        flex-direction: column;
     }
 
+    .gmap_canvas {
+        width:90%;
+    }
 }
 
 @media (max-width: 600px) {
     #sekcija1 {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-row-gap: 40px;
+        grid-row-gap: 20px;
         grid-template-areas: "lokacija telefon"
             "mejl mejl";
     }
@@ -268,6 +343,10 @@ h1 {
     #mejl {
         grid-area: mejl;
     }
+
+    .gmap_canvas {
+        width:95%;
+    }
 }
 
 
@@ -285,7 +364,7 @@ h1 {
     #sekcija1 {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        grid-row-gap: 40px;
+        grid-row-gap: 30px;
         grid-template-areas: "lokacija"
             "telefon"
             "mejl";

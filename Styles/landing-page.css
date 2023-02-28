@@ -1,6 +1,10 @@
+:root {
+    --glavnaBoja: #003da6;
+    --pozadinska: rgb(225, 239, 255);
+  }
 body{
     margin:0;
-    background-color: rgb(15,15,15);
+    background-color:var(--pozadinska);
     overflow: hidden;
 }
 
@@ -11,6 +15,7 @@ main{
     "copyright";
     justify-items: center;
     gap:2rem;
+    color:var(--glavnaBoja);
 }
 
 
@@ -39,8 +44,10 @@ main{
 }
 
 .logo-slika img{
-    width:clamp(50vw,75vw,700px);
-    aspect-ratio: 4;
+    /* width:clamp(50vw,75vw,700px);
+    aspect-ratio: 4; */
+    width: 300px;
+    height: 300px;
 }
 
 .jezici{
@@ -65,7 +72,8 @@ main{
     flex-direction: column;
     align-items: center;
     font-size:2.8rem;
-    color:rgba(255,255,255,0.5);
+    color:var(--glavnaBoja);
+    font-family: 'Titillium web', sans-serif;
 }
 
 .dugme-jezik{

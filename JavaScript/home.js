@@ -1,7 +1,10 @@
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 1500;
+let interval = 2500;
+const brojacEl = document.querySelector("#brojacMain")
+let flagUcitan = false;
 
-valueDisplays.forEach((valueDisplay) => {
+const countingAnimation = () => {
+  valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
     let endValue = parseInt(valueDisplay.getAttribute("data-val"));
     let duration = Math.floor(interval / endValue);
@@ -14,6 +17,9 @@ valueDisplays.forEach((valueDisplay) => {
       }
     }, duration);
   });
+}
+
+
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -27,6 +33,10 @@ valueDisplays.forEach((valueDisplay) => {
 
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
+        if(reveals[i] === brojacEl && !flagUcitan){
+          countingAnimation();
+          flagUcitan = true;
+        }
       } else {
         reveals[i].classList.remove("active");
       }
@@ -34,7 +44,8 @@ valueDisplays.forEach((valueDisplay) => {
   }
   window.addEventListener("scroll", reveal);
   
-  $('.kartica').click(function(){
+
+  $('.klik').click(function(){
     
     switch(this.innerText){
       case "Drumski transport": window.open("usluge.html#drum-a", "_self")
