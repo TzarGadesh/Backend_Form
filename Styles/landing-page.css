@@ -1,6 +1,7 @@
 :root {
     --glavnaBoja: #003da6;
     --pozadinska: rgb(225, 239, 255);
+    --footerBoja: #001e51;
   }
 body{
     margin:0;
@@ -31,10 +32,10 @@ main{
 
 .crno-za-animaciju{
     position:absolute;
-    background-color: rgb(15,15,15);
+    background-color: var(--pozadinska);
     width:640px;
     height:200px;
-    transition: 3500ms ease-in;
+    transition: 1500ms ease-in;
 }
 
 .logo-slika{
@@ -44,10 +45,8 @@ main{
 }
 
 .logo-slika img{
-    /* width:clamp(50vw,75vw,700px);
-    aspect-ratio: 4; */
-    width: 300px;
-    height: 300px;
+     width:clamp(50vw,75vw,700px);
+    aspect-ratio: 4; 
 }
 
 .jezici{
@@ -107,7 +106,7 @@ main{
 
 .copyright{
     grid-area: copyright;
-    color:rgba(255,255,255);
+    color: var(--footerBoja);
     font-size:1.25rem;
     margin-bottom: 20px;
 }

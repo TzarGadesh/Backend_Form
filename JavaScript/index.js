@@ -9,10 +9,10 @@ function animacijaLogo() {
     setTimeout(function () {
         $("main").css("display", "grid");
         $(".loading").css("display", "none");
-    }, 3000);
+    }, 1750);
     setTimeout(function () {
         animacijaJezici()
-    }, 3750);
+    }, 2000);
 
 }
 

@@ -1,6 +1,7 @@
 :root {
     --glavnaBoja: #003da6;
     --pozadinska: rgb(225, 239, 255);
+    --footerBoja: #001e51;
 }
 main{
     background-color: var(--pozadinska);
@@ -121,7 +122,7 @@ hr{
     border: 2px solid var(--pozadinska);
     border-radius: 10px;
     width: fit-content;
-    padding: 0.5rem 1.25rem;
+    padding: 1rem 1.5rem;
     margin:1rem 10%;
     transition: 500ms;
     background-color: var(--glavnaBoja);
@@ -132,39 +133,19 @@ hr{
     display: inline;
     font-size: 2.25rem;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .odgovor{
-    position: absolute;
-    transform: translateY(-100%);
-    visibility: hidden;
     font-size: 1.25rem;
     font-weight: 400;
 }
 
-.pitanje span{
-    font-size: 2.25rem;
-    background-color: green;
-    width:15px;
-    height: 15px;
-    border: 1px solid green;
-    margin: 5px;
-    cursor: pointer;
+/* .nepar div{
+    margin-top: 30px;
 }
 
-
-.nepar{
-    align-self: flex-end;
-    text-align: right;
+.nepar h3{
+    float: right;
 }
-
-.spusten-odgovor{
-    transition: 500ms;
-    position:relative;
-    transform: translateY(0);
-    visibility: visible;
-}
-
-.nepar .spusten-odgovor{
-    text-align: left;
-}
+ */

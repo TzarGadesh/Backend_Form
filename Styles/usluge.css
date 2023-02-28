@@ -19,7 +19,7 @@ html, body{
 }
 
 main{
-    padding: 10px 40px;
+    padding: 10px 15px;
 }
 .kont{
     border-bottom: 3px solid rgba(0,0,0,0.8);
@@ -61,7 +61,9 @@ main{
     font-size: 1.75vw;
     padding: 0 10px;
 }
-
+.tekst>p{
+    padding: 0 50px;
+}
 .uvod{
     font-size: 2vw;
     padding: 0 10px;
@@ -73,6 +75,8 @@ h3{
 }
 main img{
     width: 100%;
+    margin: 10px 0;
+    border-radius: 7.5px;
 }
 .sd{
     display: grid;

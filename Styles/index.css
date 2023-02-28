@@ -1,7 +1,8 @@
 :root {
     --glavnaBoja: #003da6;
     --pozadinska: rgb(225, 239, 255);
-  }
+    --footerBoja: #001e51;
+}
 /* custom scrollbar */
 /* bivsa glavna boja rgba(4,75,161,255);*/
 ::-webkit-scrollbar{
@@ -10,11 +11,12 @@
 }
 
 ::-webkit-scrollbar-track{
-    margin:100px 0 10px;
+    margin:100px 0 5px;
+    width:5px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:var(--glavnaBoja);
+    background-color:var(--footerBoja);
     border-radius: 15px;
     height:60px;
 }
@@ -99,19 +101,26 @@ footer{
 
 #nav-upit{
     background-color:inherit;
-    outline: 0.5px solid var(--glavnaBoja);
-}
-
-#nav-upit:hover{
-    background-color:var(--glavnaBoja);
+    
+    /* outline: 0.5px solid var(--glavnaBoja); */
 }
 #nav-upit a{
+    /* color:var(--glavnaBoja); */
+    font-weight:900;
+}
+#nav-upit:hover{
+    background-color:var(--glavnaBoja);
+    font-weight: bold;
+}
+/* }
+#nav-upit a{
     color:var(--glavnaBoja);
-    font-weight: 700;
+    font-weight:900;
+    
 }
 #nav-upit:hover a{
     color:black;
-}
+} */
 
 .nav-burger{
     background-color: transparent;
@@ -171,7 +180,7 @@ footer{
     }
 
     ::-webkit-scrollbar{
-        background-color: var(--pozadinska); 
+        background-color: transparent;
     }
 
     ::-webkit-scrollbar-thumb:hover{
@@ -228,8 +237,8 @@ footer{
     }
 
     ::-webkit-scrollbar{
-        width:10px;
-        background-color: rgba(20,20,20,0.9);
+        width:5px;
+        background-color: transparent;
     }
 
     ::-webkit-scrollbar-thumb{
@@ -277,6 +286,7 @@ footer {
   footer .info .dodinf {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    letter-spacing: 1px;
   }
   
   footer .info .dodinf h5 {
@@ -298,8 +308,15 @@ footer {
     color: cyan;
   }
   footer .stranice a:hover {
-    color: cyan;
+    /* color: var(--glavnaBoja); */
+    color:#fff;
+    text-decoration: underline;
   }
+
+  footer .footer-ikonica{
+    font-size: 1.15rem;
+  }
+
   .mreze {
     padding-top: 5px;
     text-align: left;
@@ -325,10 +342,9 @@ footer {
     opacity: 0.8;
   }
   .jezici img:hover {
-    border: 1px solid rgb(20, 20, 20);
+    border: 0.5px solid var(--pozadinska);
     color: #fff;
-    box-shadow: 0 0 10px #09ccef, 0 0 20px, 0 0 30px #046570, 0 0 40px #010b0c,
-      0 0 50px rgb(13, 13, 13), 0 0 60px rgb(7, 7, 7);
+    box-shadow: 0 0 10px var(--pozadinska), 0 0 20px var(--glavnaBoja), 0 0 30px cyan;
     opacity: 1;
   }
   

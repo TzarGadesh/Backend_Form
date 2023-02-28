@@ -292,14 +292,14 @@ hr{
     background-position: center;
     border-radius: 5px 0 0 5px;
 }
-.tekstualni-deo{
+.tekstualni-deo-tekst{
     font-size: 1.5rem;
 }
-.tekstualni-deo>h2{
+.tekstualni-deo-tekst>h2{
     text-align: center;
 }
-.tekstualni-deo > p{
-    padding-top: 2.5rem;
+.tekstualni-deo-tekst > p{
+    padding-top: 2.05rem;
 }
 
 .tekstualni-deo-tekst{
