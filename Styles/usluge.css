@@ -18,13 +18,15 @@ html, body{
 .slika{
     margin: 10px;
 }
-
 main{
     padding: 10px 15px;
 }
 .kont{
     border-bottom: 3px solid rgba(0,0,0,0.8);
     border-radius: 0px;
+}
+.kont > .tekst{
+    font-size: 1.35rem;
 }
 .uvod{
     margin: 10px 5px;
@@ -87,8 +89,23 @@ main img{
 #drum-a{
     border-top: 3px solid rgba(0,0,0,0.8);
 }
+@media (width <=1200px){
 
+    .slika{
+        vertical-align: middle;
+        /* justify-self: center; */
+        padding-top: 17.5%;
+        padding-bottom: 17.5%;
+    }
+
+}
 @media (width <=900px){
+    .slika{
+        vertical-align: middle;
+        justify-self: center;
+        padding-top: 5%;
+        padding-bottom:5%;
+    }
     #naslovni{
         width: 210px;
     }
@@ -176,5 +193,16 @@ main img{
     
     .tekst>p{
         font-size: 1.35rem;
+    }
+    .tekst>h3{
+        font-size: 1.75rem;
+    }
+    .slika{
+        align-items: center;
+    }
+}
+@media (width <= 700px){
+    .tekst>h3{
+        font-size: 1.75rem;
     }
 }

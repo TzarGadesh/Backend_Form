@@ -19,14 +19,13 @@ hr{
     margin-right: auto;
 }
 .container1{   
-    background-image: url("/Slike/mapa2.png");
-    /* background-color: rgba(255, 254, 254, 0.9); */
+    background-image: url("/Slike/mapa.svg");
     background-color: var(--pozadinska);
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: right;
-    padding-top: 14.5%;
-    padding-bottom: 14.5%;
+    background-position:right;
+    padding-top: 10.5%;
+    padding-bottom: 10.5%;
 
 }
 .tekst1{
@@ -35,8 +34,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* padding:0 0 50px 150px;  */
-    margin-left:  12.5%;
+    margin-left:  10.5%;
 }
 
 .brojac{
@@ -155,12 +153,12 @@ hr{
     background-position: center;
 }
 .carina{
-    background-image: url("/Slike/carina.jpg");
+    background-image: url("/Slike/carina-početna-velika.jpg");
     background-size: cover;
     background-position: center;
 }
 .skladiste{
-    background-image: url("/Slike/skladiste.jpg");
+    background-image: url("/Slike/magacin-velika.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -375,38 +373,143 @@ hr{
     opacity: 1;
   }
 
-@media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1300px) {
     .brojac{
-        width: 100vw;
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .broj{
+        padding:12.5px;
     }
     .kartice{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .container1{   
+        background-image: url("/Slike/mapa.svg");
+        background-color: var(--pozadinska);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position:right;
+        padding-top: 10.5%;
+        padding-bottom: 10.5%;
+    
+    }
+    .tekst1{
+        z-index: 1;
+        color: var(--glavnaBoja);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:  12.5%;
+    }
+    .dugme-O-Nama{
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .brojac{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .broj{
+        padding:12.5px;
+    }
+    .kartice{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .container1{   
+        background-image: url("/Slike/mapa.svg");
+        background-color: var(--pozadinska);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position:right;
+        padding-top: 10.5%;
+        padding-bottom: 10.5%;
+    
+    }
+    .tekst1{
+        z-index: 1;
+        color: var(--glavnaBoja);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:  8%;
+    }
+    .tekst1>h1{
+        font-size: 2.5rem;
+    }
+
+    .tekstualni-deo{
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 800px) {
     .brojac{
-        width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .broj{
+        padding:12.5px;
     }
     .kartice{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .container1{   
+        background-image: url("/Slike/mapa.svg");
+        background-color: var(--pozadinska);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position:right;
+        padding-top: 10.5%;
+        padding-bottom: 10.5%;
+    
+    }
+    .tekst1{
+        z-index: 1;
+        color: var(--glavnaBoja);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:  8%;
+    }
+    .tekst1>h1{
+        font-size: 2.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .brojac{
-        width: 100vw;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .broj{
+        padding:12.5px;
     }
     .kartice{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .container1{   
+        background-image: url("/Slike/mapa.svg");
+        background-color: var(--pozadinska);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position:right;
+        padding-top: 10.5%;
+        padding-bottom: 10.5%;
+    
+    }
+    .tekst1{
+        z-index: 1;
+        color: var(--glavnaBoja);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:  0.5%;
     }
 }
