@@ -148,7 +148,7 @@ hr{
     background-position: left;
 }
 .zbirni{
-    background-image:url("/Slike/intermod.gif");
+    background-image:url("/Slike/zbirni-početna.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -373,7 +373,7 @@ hr{
     opacity: 1;
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200px) {
     .brojac{
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr;
