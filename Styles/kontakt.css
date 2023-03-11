@@ -195,6 +195,10 @@ main div {
     margin: 0;
 }
 
+.nevidljiva-linija{
+    visibility: hidden;
+}
+
 
 .kucica {
     width: 100%;

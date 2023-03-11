@@ -37,6 +37,12 @@ hr{
     margin-left:  10.5%;
 }
 
+.tekst1-eng h1{
+    font-size:4rem;
+    margin-left:-2%;
+    margin-top:-3%;
+}
+
 .brojac{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -100,7 +106,7 @@ hr{
     hsl(20 0% 0%/0.3) 20%,
     hsl(40 0% 0%/0.5)40%,   
     hsl(0 0% 0%/1)
-    );  
+    );
 }   
 .card-title::after{
     content: "";
@@ -148,7 +154,7 @@ hr{
     background-position: left;
 }
 .zbirni{
-    background-image:url("/Slike/intermod.gif");
+    background-image:url("/Slike/zbirni-početna.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -165,24 +171,24 @@ hr{
 @media (hover){
     
     .card-content{
-            transform: translateY(75%);
+            transform: translateY(65%);
             transition: transform 500ms ease;
     }
-   .prvi{
-    transform: translateY(80%);
+   /* .prvi{
+    transform: translateY(75%);
    }
    .drugi{
-    transform: translateY(85%);
+    transform: translateY(90%);
    }
    .treci{
     transform: translateY(85%);
    }
    .cetvrti{
-    transform: translateY(85%);
+    transform: translateY(75%);
    }
    .sesti{
     transform: translateY(90%);
-   }
+   } */
     .button:hover,
     .button:focus{
             background-color: #a7c3f3;
@@ -208,7 +214,7 @@ hr{
             transform: translateY(0);
             transition-delay: 500ms;
     }
-    .kartica:hover .drugi,
+    /* .kartica:hover .drugi,
     .kartica:focus-within .drugi{
     
             transform: translateY(10.5%);
@@ -231,7 +237,7 @@ hr{
     
             transform: translateY(20%);
             transition-delay: 500ms;
-    }
+    } */
     .kartica:focus-within .card-content{
     
             transition-duration: 0ms;
@@ -277,7 +283,7 @@ hr{
     background-color: var(--glavnaBoja);
     color:#f9f9f9;
     margin: 5% 7.5%;
-    height: 15%;
+    height: fit-content;
     width: auto;
     border-radius: 5px;
 }
@@ -287,7 +293,7 @@ hr{
 .slikovni-deo{
     background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvdXAlMjBidXNpbmVzcyUyMHBob3RvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
     border-radius: 5px 0 0 5px;
 }
 .tekstualni-deo-tekst{
@@ -371,9 +377,10 @@ hr{
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
+    transition-delay: 0ms;
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200px) {
     .brojac{
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -441,9 +448,24 @@ hr{
     .tekst1>h1{
         font-size: 2.5rem;
     }
+    
+    .tekstualni-deo-tekst h2{
+        font-size: 2.5rem;
+    }
 
-    .tekstualni-deo{
-        padding-bottom: 50px;
+    .tekstualni-deo-tekst p{
+        font-size:1.25rem
+    }
+}
+@media screen and (max-width: 900px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slikovni-deo{
+        height: 350px;
+        border-radius: 5px;
     }
 }
 
@@ -481,6 +503,7 @@ hr{
         font-size: 2.5rem;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .brojac{

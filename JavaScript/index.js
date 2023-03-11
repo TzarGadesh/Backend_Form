@@ -1,5 +1,6 @@
 animacijaLogo()
 
+
 function animacijaLogo() {
 
     for (i = 0; i < 900; i++) {
@@ -7,7 +8,7 @@ function animacijaLogo() {
     }
 
     setTimeout(function () {
-        $("main").css("display", "grid");
+        $("main").css("display", "flex");
         $(".loading").css("display", "none");
     }, 1750);
     setTimeout(function () {
@@ -29,7 +30,7 @@ $("button").click(function () {
             window.open("home-eng.html", "_self")
             break;
         case "ruski-jezik":
-            window.open("home-rus.html", "_self")
+            window.open("home.html", "_self")
             break;
     }
 })

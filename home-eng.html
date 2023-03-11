@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -20,16 +21,19 @@
     <!-- //css -->
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="stylesheet" href="Styles/home.css">
+    <link rel="stylesheet" href="Styles/kontakt.css">
     <!-- FontAwesome-->
     <script src="https://kit.fontawesome.com/bf4bc345b8.js" crossorigin="anonymous"></script>
-    <title> Iskon - Početna</title>
+    <title> Iskon - Home</title>
 </head>
 
 <body>
     <header>
-        <div class="nav-logo">
-            <img src="Slike/logo.png" alt="">
-        </div>
+      <div class="nav-logo">
+        <a href="/home-eng.html">
+          <img src="Slike/logo-cropped.svg" alt="" />
+        </a>
+      </div>
 
         <button class="nav-burger" onClick="burgerClicked()">
             <i class="nav-burger-icon fa-solid fa-bars burger-animation"></i>
@@ -37,169 +41,352 @@
 
         <div class="nav-menu">
             <div id="nav-oNama">
-                <a class="nav-link" href="o-nama.html">O nama</a>
+                <a class="nav-link" href="o-nama-eng.html">About us</a>
             </div>
             <div id="nav-usluge">
-                <a class="nav-link" href="usluge.html">Usluge</a>
+                <a class="nav-link" href="usluge-eng.html">Services</a>
             </div>
             <div id="nav-kontakt">
-                <a class="nav-link" href="kontakt.html">Kontakt</a>
+                <a class="nav-link" href="kontakt-eng.html">Contact</a>
             </div>
-            <div id="nav-upit">
-                <a class="nav-link" href="kontakt.html#upit-anchor">Upit</a>
+            <div class="glowing-link" id="nav-upit">
+                <a class="nav-link" href="kontakt-eng.html#upit-anchor">Inquiry</a>
             </div>
-
         </div>
     </header>
 
     <main>
         <div class="container1">
-
-            <div class="tekst1">
-                <h1>SVET NA DOHVAT RUKE</h1>
+            <div class="tekst1 tekst1-eng">
+                <h1>WORLD <br> AT <br> YOUR <br> FINGERTIPS</h1>
             </div>
-
         </div>
 
-        <div class="brojac">
+        <div class="brojac reveal" id="brojacMain">
             <div class="broj1 broj">
-                <i class="fa-sharp fa-solid fa-calendar-days"></i>
-                <br>
+                <i class="fa-regular fa-calendar-days"></i>
                 <h3 class="num" data-val="20">
-                    <h3> Godina iskustva</h3>
+                    <h3>  years of experience</h3>
                 </h3>
             </div>
             <div class="broj2 broj">
-                <i class="fa-sharp fa-solid fa-globe"></i>
-                <br>
+                <i class="fa-solid fa-earth-americas"></i>
                 <h3 class="num" data-val="83">
-                    <h3> Različitih država</h3>
+                    <h3>  Different countries</h3>
                 </h3>
             </div>
             <div class="broj3 broj">
-                <i class="fa-sharp fa-solid fa-face-smile"></i>
-                <br>
+                <i class="fa-regular fa-face-smile-wink"></i>
                 <h3 class="num" data-val="300">
-                    <h3> Zadovoljnih klijenata</h3>
+                    <h3>+ satisfied clients</h3>
                 </h3>
             </div>
         </div>
         </div>
-
-        <div class="pozadinska-slika">
-            <div class="izmedju pozadinska-boja">
-                <h2>Naše Usluge</h2>
+        <hr>
+            <div class="izmedju">
+                <h2 class="">Our services</h2>
             </div>
+        <hr>  
             <div class="kartice">
                 <div class="drum kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-truck"></i></div>
-                    <div class="tekst">
-                        <h3>Drumski transport</h3>
-
+                    <div class="card-content prvi"> 
+                        <h3 class="card-title">Road freight</h3> 
+                        <p class="vidljiv"><br>Mi razumemo značaj efikasnog i pouzdanog transporta za vaše poslovanje. Stoga, nudimo
+                          redovne linije u uvozu i izvozu, kako bismo osigurali da vaša roba bude isporučena na vreme.</p>
+                            <a href="usluge.html" class="button klik">Saznajte više</a>
                     </div>
                 </div>
-
-                <div class="avio kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-plane-departure"></i></i></div>
-                    <div class="tekst">
-                        <h3>Avio transport</h3>
-
-                    </div>
-                </div>
-
-                <div class="brod kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-ship"></i></div>
-                    <div class="tekst">
-                        <h3>Brodski transport</h3>
-
-                    </div>
-                </div>
-
                 <div class="zbirni kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-boxes-stacked"></i></div>
-                    <div class="tekst">
-                        <h3>Zbirni transport</h3>
-
+                  <div class="card-content drugi"> 
+                      <h3 class="card-title">Ltl freight</h3> 
+                      <p class="vidljiv"><br>Naš tim specijalizovan je za organizaciju zbirnog transporta širom Evrope, Turske i Rusije.
+                        Zahvaljujući širokoj bazi naših partnera, možemo brzo odgovoriti na upite i pružiti prilagođeno
+                        rešenje za svakog klijenta.</p>
+                          <a href="usluge.html#drum-a" class="button klik">Saznajte više</a>
+                  </div>
+              </div>
+                <div class="brod kartica reveal">
+                    <div class="card-content treci"> 
+                        <h3 class="card-title">Sea freight</h3> 
+                        <p class="vidljiv"><br>Mi pružamo uslugu brodskog transporta iz celog sveta. Bez obzira na to da li je u pitanju mala
+                          količina robe ili veliki teret, organizujemo prevoz od luke do željene adrese.
+                          <br>
+                          <br>
+                        </p>
+                            <a href="usluge.html#zbirni-a" class="button klik">Saznajte više</a>
                     </div>
                 </div>
-
+                <div class="avio kartica reveal">
+                  <div class="card-content cetvrti"> 
+                      <h3 class="card-title">Air freight</h3> 
+                      <p class="vidljiv"><br>Ukoliko Vam je zbog ograničenog roka za isporuku Vaše pošiljke potrebno brzo i efikasno
+                        rešenje, nudimo Vam uslugu avio prevoza iz celog sveta.
+                      <br>
+                    <br>
+                  </p>
+                          <a href="usluge.html#brod-a" class="button klik">Saznajte više</a>
+                  </div>
+              </div>
                 <div class="carina kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-road-barrier"></i></div>
-                    <div class="tekst">
-                        <h3>Usluge carinjenja</h3>
-
+                    <div class="card-content peti"> 
+                        <h3 class="card-title">Freight forwarding</h3> 
+                        <p class="vidljiv"><br>Pored usluge transporta i skladištenja robe nudimo Vam špediterske usluge koje obuhvataju i carinjenje
+                          Vaše robe u izvozu i uvozu.
+                        <br>
+                      <br></p>
+                            <a href="usluge.html#skladiste-a" class="button klik">Saznajte više</a>
                     </div>
                 </div>
 
                 <div class="skladiste kartica reveal">
-                    <div class="ikonica"><i class="fa-solid fa-warehouse"></i></div>
-                    <div class="tekst">
-                        <h3>Usluge skladištenja</h3>
-
+                    <div class="card-content sesti"> 
+                        <h3 class="card-title">Warehousing</h3> 
+                        <p class="vidljiv"><br>Možemo ponuditi i skladištenje robe kroz našu mrežu partnera koji poseduju carinske magacine
+                          na svim carinskim ispostavama u Beogradu.
+                        <br>
+                      <br></p>
+                        <a href="usluge.html#avio-a" class="button klik">Saznajte više</a>
                     </div>
                 </div>
 
             </div>
         </div>
-
-        <div class="kontakt">
-            <section class="ikone">
-                <div class="container text-center">
-                    <div class="row align-items-start">
-                        <div class="col">
-                            <div class="icon">
-                                <i class="tag fa-solid fa-location-dot fa-3x"></i>
-                            </div>
-                            <div class="tekst">
-                                <p>Kancelarija: Belicka 24</p>
-                                <p>Sedište: Ustanička 120</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="icon">
-                                <i class="tag fa-solid fa-phone fa-3x"></i>
-                            </div>
-                            <div class="tekst">
-                                <p>Telefon: 011 387151</p>
-                                <p>Telefon: 011 387161</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="icon">
-                                <i class="tag fa-solid fa-envelope fa-3x"></i>
-                            </div>
-                            <div class="tekst">
-                                <p>Mail: office@iskonbgd.rs</p>
-                            </div>
-                        </div>
-                    </div>
-            </section>
+        
+        <div class="about">
+            <div class="slikovni-deo"></div>
+            <div class="tekstualni-deo">
+                <div class="tekstualni-deo-tekst">
+                    <h2>Who are we</h2>
+                    <p>ISKON je porodična firma sa preko 20 godina iskustva u pružanju logističkih
+                        usluga.<br><br>
+                        Zahvaljujući razgranatoj mreži naših partnera i fleksibilnom pristupu poslovanju u
+                        mogućnosti smo da izađemo u susret svim zahtevima naših klijenata i da im pružimo
+                        brza i efikasna rešenja.
+                    </p>
+                </div>
+               
+                <div class="dugme-O-Nama"><a href="/o-nama.html" class="button" id="dugme-Mi">Saznajte više o nama</a></div>
+            </div>
         </div>
+        
+        <section class="from">
+          <a name="upit-anchor">
+            <form
+              action="https://formsubmit.co/office@iskonbgd.rs"
+              method="POST"
+              id="upit-anchor"
+            >
+              <div class="card">
+      
+                <div class="card-header">
+                  <h3>Transportation inquiry</h3>
+                </div>
+                <div class="container card-body" id="kartica">
+                  <div class="meso">
+                    <h4>Cargo info</h4>
+                    <div class="vrstaTransporta podaci-za-transport">
+                      <select
+                        class="kucica"
+                        name="Tip transporta"
+                        id="izbor-transporta"
+                        required
+                      >
+                        <option value="">Type of transport</option>
+                        <option value="avio">Road freight</option>
+                        <option value="brodski">Sea freight</option>
+                        <option value="drumski">Air freight</option>
+                        <option value="zeleznicki">Railway freight</option>
+                      </select>
+                    </div>
+                    <div class="mestoUtovara">
+                      <input
+                        type="text"
+                        class="kucica"
+                        id="mestoUtovara"
+                        name="Mesto utovara"
+                        placeholder="Loading place"
+                        required
+                      />
+                    </div>
+                    <div class="mestoIstovara">
+                      <input
+                        type="text"
+                        class="kucica"
+                        id="mestoIstovara"
+                        name="Mesto istovara"
+                        placeholder="Unloading place"
+                        required
+                      />
+                    </div>
+                    <div class="podaciORobi">
+                      <input
+                        type="text"
+                        class="kucica"
+                        id="podaciORobi"
+                        name="Podaci o robi"
+                        placeholder="Information about the cargo"
+                        required
+                      />
+                    </div>
+                    <div class="ukupnaTezina">
+                      <input
+                        type="number"
+                        min="0"
+                        class="kucica"
+                        id="ukupnaTezina"
+                        name="Ukupna tezina"
+                        placeholder="Gross weight (kg)"
+                        required
+                      />
+                    </div>
+                    <div class="dimezije">
+                      <input
+                        type="text"
+                        class="kucica"
+                        id="dimenzija"
+                        name="Dimenzije"
+                        placeholder="Dimensions (L x W x H) "
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="meso">
+                    <h4>Client info</h4>
+                    <div class="nazivFirme licni-podaci">
+                      <input
+                        type="name"
+                        class="kucica"
+                        id="nazivFirme"
+                        name="Naziv firme"
+                        placeholder="Company name"
+                        required
+                      />
+                    </div>
+                    <div class="imePrezime">
+                      <input
+                        type="name"
+                        class="kucica"
+                        id="imeIPrezime"
+                        name="Ime i prezime"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="telefon">
+                      <input
+                        type="text"
+                        class="kucica"
+                        id="Telefon"
+                        name="Telefon"
+                        placeholder="Phone number"
+                        required
+                      />
+                    </div>
+                    <div class="email">
+                      <input
+                        type="email"
+                        class="kucica"
+                        id="email"
+                        name="E-mail"
+                        placeholder="E-mail (example@example.com)"
+                        required
+                      />
+                    </div>
+                    <div class="datumUtovara">
+                      <input
+                        type="date"
+                        class="kucica"
+                        id="datumUtovara"
+                        name="Datum utovara"
+                        placeholder="Date of loading (DD/mm/yyyy)"
+                        required
+                      />
+                    </div>
+                    <div class="napomena">
+                      <textarea
+                      name="Dodatna napomena"
+                        id="kucetina"
+                        placeholder="Additional information/notes:"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <section class="sekcija-dugme">
+                  <div class="dugmad">
+                    <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">
+                      Send
+                    </button>
+                  </div>
+                </section>
+              </div>
+            </form>
+          </a>
+        </section>
     </main>
 
     <footer>
-        <div class="socials">
-            <div class="logof">
-                <img src="Slike/logo.png" alt="">
-            </div>
-            <div class="jezici">
-                <a href="home.html"><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""></a>
-                <a href="home-eng.html"><img class="eng" src="Slike/zastava-uk.png" alt=""></a>
-                <a href="home-rus.html"><img class="rus" src="Slike/zastava-rusije.png" alt=""></a>
-            </div>
-
-            <div class="mreze">
-                <a class="linkik" target="_blank"
-                    href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2F&trk=login_reg_redirect">
-                    <i class="fa-brands fa-linkedin fal"></i></a>
-                <a class="linkik" target="_blank"
-                    href="https://www.facebook.com/campaign/landing.php?campaign_id=17872459883&extra_1=s%7Cc%7C613001324093%7Cb%7Cfacebook%20%27%7C&placement=&creative=613001324093&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D17872459883%26adgroupid%3D145027591568%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D2688%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2qKEkaj5-wIVBgOLCh1RPwJsEAAYASAAEgJ71vD_BwE"><i
-                        class="fa-brands fa-facebook fal"></i></a>
-                <a class="linkik" target="_blank" href="https://www.instagram.com/accounts/login/"><i
-                        class="fa-brands fa-instagram fal"></i></a>
-            </div>
+      <div class="info">
+        <div class="logo">
+          <img src="Slike/logo-cropped.svg" alt="" />
+          <div class="mreze">
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2F&trk=login_reg_redirect"
+            >
+              <i class="fa-brands fa-linkedin fal"></i
+            ></a>
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.facebook.com/campaign/landing.php?campaign_id=17872459883&extra_1=s%7Cc%7C613001324093%7Cb%7Cfacebook%20%27%7C&placement=&creative=613001324093&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D17872459883%26adgroupid%3D145027591568%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D2688%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2qKEkaj5-wIVBgOLCh1RPwJsEAAYASAAEgJ71vD_BwE"
+              ><i class="fa-brands fa-facebook fal"></i
+            ></a>
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.instagram.com/accounts/login/"
+              ><i class="fa-brands fa-instagram fal"></i
+            ></a>
+          </div>
         </div>
-        <div class="kopirajt">© Sirogojno</div>
+        <div class="dodinf">
+          <div class="lokacija">
+            <h5>Location</h5>
+            <p class="prviParagraf">Office: Belička 24</p>
+            <p>Headquarters: Ustanička 120</p>
+          </div>
+          <div class="kontakti">
+            <h5>Contact us</h5>
+            <p class="prviParagraf">Telephone: 011 3478151</p>
+            <p>Telephone: 011 3478161</p>
+            <p>office@iskonbgd.rs</p>
+          </div>
+          <div class="stranice">
+            <h5>Navigation</h5>
+            <p class="prviParagraf"><a href="home-eng.html">Home</a></p>
+            <p><a href="o-nama-eng.html">About us</a></p>
+            <p><a href="usluge-eng.html">Services</a></p>
+            <p><a href="kontakt-eng.html">Contact</a></p>
+            <p><a href="kontakt-eng.html#upit-anchor">Inquiry</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="jezici">
+          <a href="home.html"
+            ><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""
+          /></a>
+          <a href="home-eng.html"
+            ><img class="eng" src="Slike/zastava-uk.png" alt=""
+          /></a>
+          <a href="home.html"
+            ><img class="rus" src="Slike/zastava-rusije.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="kopirajt">© Sirogojno</div>
     </footer>
     <!-- Jquery i JS za navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -207,6 +394,8 @@
     <!-- Laki brojac -->
     <script src="Javascript/home.js"></script>
     <!-- Laki dugme link -->
+    <script src="Javascript/home-kartice.js"></script>
+
 </body>
 
 </html>
