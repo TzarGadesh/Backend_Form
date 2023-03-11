@@ -45,7 +45,9 @@
   <body>
     <header>
       <div class="nav-logo">
-        <img src="Slike/logo-cropped.svg" alt="" />
+        <a href="/home.html">
+          <img src="Slike/logo-cropped.svg" alt="" />
+        </a>
       </div>
 
       <button class="nav-burger" onClick="burgerClicked()">
@@ -169,17 +171,16 @@
               ></iframe>
             </div>
           </div>
+          <hr class="nevidljiva-linija" id="upit-anchor">
         </div>
       </section>
 
       <!---Cetvrta sekcija = upit--->
       <section class="from">
-        <a name="upit-anchor">
+        <a name="upit-anchor2">
           <form
-            action="https://formsubmit.co/vpetrovic596@gmail.com"
+            action="https://formsubmit.co/office@iskonbgd.rs"
             method="POST"
-            id="upit-anchor"
-            autocomplete="off"
           >
             <div class="card">
     
@@ -192,7 +193,7 @@
                   <div class="vrstaTransporta podaci-za-transport">
                     <select
                       class="kucica"
-                      name="transport"
+                      name="Tip transporta"
                       id="izbor-transporta"
                       required
                     >
@@ -207,6 +208,7 @@
                     <input
                       type="text"
                       class="kucica"
+                      name="Mesto utovara"
                       id="mestoUtovara"
                       placeholder="Mesto utovara"
                       required
@@ -217,7 +219,8 @@
                       type="text"
                       class="kucica"
                       id="mestoIstovara"
-                      placeholder="Mesto istovara"
+                      name="Mesto istovara"
+                      placeholder="Mesto istovara: "
                       required
                     />
                   </div>
@@ -226,6 +229,7 @@
                       type="text"
                       class="kucica"
                       id="podaciORobi"
+                      name="Podaci o robi"
                       placeholder="Podaci o robi"
                       required
                     />
@@ -236,6 +240,7 @@
                       min="0"
                       class="kucica"
                       id="ukupnaTezina"
+                      name="Ukupna tezina"
                       placeholder="Ukupna tezina (kg)"
                       required
                     />
@@ -245,6 +250,7 @@
                       type="text"
                       class="kucica"
                       id="dimenzija"
+                      name="Dimenzije"
                       placeholder="Dimenzije (D x S x V) "
                       required
                     />
@@ -257,6 +263,7 @@
                       type="name"
                       class="kucica"
                       id="nazivFirme"
+                      name="Naziv firme"
                       placeholder="Naziv firme"
                       required
                     />
@@ -266,6 +273,7 @@
                       type="name"
                       class="kucica"
                       id="imeIPrezime"
+                      name="Ime i prezime"
                       placeholder="Ime i Prezime"
                       required
                     />
@@ -275,6 +283,7 @@
                       type="text"
                       class="kucica"
                       id="Telefon"
+                      name="Telefon"
                       placeholder="Telefon"
                       required
                     />
@@ -284,22 +293,24 @@
                       type="email"
                       class="kucica"
                       id="email"
+                      name="E-mail"
                       placeholder="E-mail (example@example.com)"
                       required
                     />
                   </div>
                   <div class="datumUtovara">
                     <input
-                      type="date"
+                      type="text"
                       class="kucica"
                       id="datumUtovara"
-                      placeholder="Datum utovara (dd/mm/gg)"
+                      name="Datum utovara"
+                      placeholder="Datum utovara (dd/mm/gggg)"
                       required
                     />
                   </div>
                   <div class="napomena">
                     <textarea
-                      name="dodatnaNapomena"
+                      name="Dodatna napomena"
                       id="kucetina"
                       placeholder="Napomene:"
                     ></textarea>
@@ -309,7 +320,7 @@
               <section class="sekcija-dugme">
                 <div class="dugmad">
                   <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">
-                    Posalji
+                    Pošalji
                   </button>
                 </div>
               </section>
@@ -359,9 +370,9 @@
     </div>
     <div class="socials">
         <div class="jezici">
-            <a href="home.html"><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""></a>
-            <a href="home-eng.html"><img class="eng" src="Slike/zastava-uk.png" alt=""></a>
-            <a href="home-rus.html"><img class="rus" src="Slike/zastava-rusije.png" alt=""></a>
+            <a href="kontakt.html"><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""></a>
+            <a href="kontakt-eng.html"><img class="eng" src="Slike/zastava-uk.png" alt=""></a>
+            <a href="kontakt.html"><img class="rus" src="Slike/zastava-rusije.png" alt=""></a>
         </div>
     </div>
     <div class="kopirajt">© Sirogojno</div>

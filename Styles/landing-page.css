@@ -10,16 +10,23 @@ body{
 }
 
 main{
-    display:none;
-    grid-template-areas:"logo"
-    "jezici"
-    "copyright";
-    justify-items: center;
-    gap:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
     color:var(--glavnaBoja);
 }
 
 
+.jezici-kopirajt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width:100vw;
+}
 
 
 .loading{
@@ -39,19 +46,17 @@ main{
 }
 
 .logo-slika{
-    grid-area:logo;
-    margin-top:3rem;
+    margin-top:5rem;
     transition: 500ms ease-in;
 }
 
 .logo-slika img{
-     width:clamp(50vw,75vw,700px);
+     width:clamp(50vw,75vw,650px);
     aspect-ratio: 4; 
 }
 
 .jezici{
-    grid-area:jezici;
-    margin:15vh auto 3vh;
+    margin:2.5vh auto 3vh;
     display: flex;
     flex-direction: row;
     width:85%;
@@ -64,7 +69,7 @@ main{
 
 .aktivan{
     opacity:1;
-    transition: 3500ms ease-out;
+    transition: opacity 3500ms ease-out;
 }
 
 .jezici div{
@@ -77,8 +82,8 @@ main{
 }
 
 .dugme-jezik{
-    width:200px;
-    height:150px;
+    width:175px;
+    height:125px;
     border-radius:2.5%;
     border:2.5px solid black;
     padding:0;
@@ -106,7 +111,6 @@ main{
 }
 
 .copyright{
-    grid-area: copyright;
     color: var(--footerBoja);
     font-size:1.25rem;
     margin-bottom: 20px;
@@ -130,15 +134,19 @@ main{
 
 
 /* Tablet i mobilni */
-@media (max-width:955px){
+@media (max-width:735px){
     .jezici{
         flex-direction: column;
         gap:50px;
     }
 
+    .logo-slika img{
+        width:95vw;
+    }
+
     .dugme-jezik{
-        width:70vw;
-        height:50vh;
+        width:250px;
+        height:200px;
     }
 
     .jezici div{
@@ -164,11 +172,21 @@ main{
     }
 }
 
-@media (max-width:500px){
-    .dugme-jezik{
-        width:75vw;
-        height:60vw;
+@media (max-width:550px){
+    main{
+        justify-content: flex-start;
     }
+
+    .logo-slika{
+        margin:7.5rem 0 10rem;
+    }
+}
+
+@media (max-width:500px){
+    /* .dugme-jezik{
+        width:50vw;
+        height:30vw;
+    } */
 
     .logo-loading img{
         width:70vw;

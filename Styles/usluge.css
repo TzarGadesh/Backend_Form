@@ -17,6 +17,9 @@ html, body{
 }
 .slika{
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main{
     padding: 10px 15px;
