@@ -1,5 +1,29 @@
 const plusici = document.querySelectorAll(".pitanje span");
 let spustenOdgovor = false;
+const kutijice = document.querySelectorAll(".pitanje")
+
+const BoxIsteVelicine = () => {
+  let maxSirina = 0;
+  kutijice.forEach(kutija => {
+    const sirinaKutije = kutija.offsetWidth;
+    maxSirina = sirinaKutije > maxSirina ? sirinaKutije : maxSirina;
+  })
+
+  kutijice.forEach(kutija => {
+    kutija.style.width = `${maxSirina}px`;
+  })
+}
+
+BoxIsteVelicine();
+
+const vratiSirinu = () => {
+  kutijice.forEach(kutija => {
+    kutija.style.width = `80%`;
+  })
+}
+
+window.onresize = vratiSirinu;
+
 
 const toggleOdgovor = (e) => {
 

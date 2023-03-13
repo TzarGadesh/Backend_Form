@@ -317,6 +317,7 @@ hr{
     transition: 500ms ease;
     display: inline-block;
     margin-top: 2.5%;
+    margin-bottom: 5%;
 }
 #dugme-Mi:hover{
     background-color: var(--glavnaBoja);
