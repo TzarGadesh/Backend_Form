@@ -1,0 +1,16 @@
+{
+  "tipTransporta": "zeleznicki",
+  "mestoUtovara": "Beograd",
+  "mestoIstovara": "Svilajnac",
+  "podaciORobi": "Različita roba",
+  "ukupnaTezina": 100,
+  "dimenzije": "20x30x40",
+  "nazivFirme": "Firma",
+  "imeIPrezime": "ImePrezime",
+  "telefon": "01113231",
+  "email": "mail@mail.com",
+  "datumUtovara": "1234-02-21T00:00:00.000Z",
+  "dodatnaNapomena": "Nema napomena",
+  "_id": "650234659370d381b1ee29b3",
+  "__v": 0
+}
