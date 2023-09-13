@@ -62,14 +62,18 @@ db.once('open', () => {
 });
 
 function writeToJSONFile(data) {
-  const jsonData = JSON.stringify(data, null, 2); // Pretvaramo podatke u JSON format sa 2-space indentacijom
-  fs.writeFileSync('podaciIzForme.json', jsonData); // Upišemo podatke u "formdata.json"
+  // Pretvaramo podatke u JSON format sa 2-space indentacijom
+  const jsonData = JSON.stringify(data, null, 2);
+  // Upišemo podatke u fajl "podaciIzForme.json"
+  fs.writeFileSync('podaciIzForme.json', jsonData);
 }
 
 function writeAllToJSONFile(data) {
-  const jsonData = JSON.stringify(data, null, 2); // Pretvaramo podatke u JSON format sa 2-space indentacijom
+  // Pretvaramo podatke u JSON format sa 2-space indentacijom
+  const jsonData = JSON.stringify(data, null, 2);
   fs.writeFileSync('svipodaci.json', jsonData);
 }
+
 app.post('/submit', async (req, res) => {
   try {
     // Izvlacimo podatke iz zahteva
@@ -104,7 +108,7 @@ app.post('/submit', async (req, res) => {
       dodatnaNapomena,
     });
 
-    // Sacuvaj form podatke u mongoDB
+    // Čuvanje podataka u mongoDB
     await newFormData.save();
     const allFormData = await FormData.find();
     // Pisanje podataka iz forme u json file
@@ -147,7 +151,7 @@ app.get('/viewdata', async (req, res) => {
   }
 });
 
-// Start the server
+// Pokretanje servera na portu 3001
 app.listen(3001, () => {
   console.log('Server is running on port 3001');
 });
