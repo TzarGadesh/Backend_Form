@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon ikonica -->
+    <link rel="icon" type="image/x-icon" href="/Slike/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- //css -->
+    <link rel="stylesheet" href="/Styles/index.css" />
+    <link rel="stylesheet" href="/Styles/kontakt.css" />
+    <!-- FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/bf4bc345b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/bf4bc345b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Iskon - Kontakt</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-logo">
+        <a href="/home">
+          <img src="Slike/logo-cropped.svg" alt="" />
+        </a>
+      </div>
+
+      <button class="nav-burger" onClick="burgerClicked()">
+        <i class="nav-burger-icon fa-solid fa-bars burger-animation"></i>
+      </button>
+
+      <div class="nav-menu">
+        <div id="nav-oNama">
+          <a class="nav-link" href="/o-nama">O nama</a>
+        </div>
+        <div id="nav-usluge">
+          <a class="nav-link" href="/usluge">Usluge</a>
+        </div>
+        <div id="nav-kontakt">
+          <a class="nav-link" href="/kontakt">Kontakt</a>
+        </div>
+        <div id="nav-upit">
+          <a class="nav-link" href="/kontakt#upit-anchor">Upit</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <hr class="horizont" />
+      <h1 class="naslov">Kontakt</h1>
+      <hr class="horizont" />
+      <!---Prva Sekcija = Informacije--->
+      <section class="glavne-ikone">
+        <div class="container" id="sekcija1">
+          <div class="icon" id="lokacija">
+            <i class="fa-solid fa-location-dot fa-3x" id="slikica"></i>
+            <div class="tekst-ikonice">
+              <p>Kancelarija: Belička 24</p>
+              <p>Sedište: Ustanička 120</p>
+            </div>
+          </div>
+          <div class="icon" id="telefon">
+            <i class="fa-solid fa-phone fa-3x" id="slikica"></i>
+            <div class="tekst-ikonice">
+              <p>Tel: 011 3478151</p>
+              <p>Tel: 011 3478161</p>
+            </div>
+          </div>
+          <div class="icon" id="mejl">
+            <i class="fa-solid fa-envelope fa-3x" id="slikica"></i>
+            <div class="tekst-ikonice">
+              <p>office@iskonbgd.rs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="kontakt-dugme">
+        <a href="o-nama.html#nastim" type="button" class="timsko-dugme"
+          >Naš tim</a
+        >
+      </div>
+      <!---Druga Sekcija = Avatari i licni podaci--->
+
+      <!-- <section class="avatari">
+        <div class="container" id="sekcija2">
+          <div class="avatar" id="vlada">
+            <div class="ikonica">
+              <i class="avatar fa-sharp fa-solid fa-person fa-3x"></i>
+            </div>
+            <div class="avatar-tekst">
+              <p>Vlada Milutinović,</p>
+              <p>Direktor</p>
+              <p>+38163341150</p>
+              <p>vlada.milutinovic@iskonbgd.rs</p>
+            </div>
+          </div>
+          <div class="avatar" id="natasa">
+            <div class="ikonica">
+              <i class="avatar fa-sharp fa-solid fa-person-dress fa-3x"></i>
+            </div>
+
+            <div class="avatar-tekst">
+              <p>Nataša Kostić,</p>
+              <p>Menadzer logistike</p>
+              <p>+381694941689</p>
+              <p>natasa.kostic@iskonbgd.rs</p>
+            </div>
+          </div>
+          <div class="avatar" id="katarina">
+            <div class="ikonica">
+              <i class="avatar fa-solid fa-person-dress fa-3x"></i>
+            </div>
+            <div class="avatar-tekst">
+              <p>Katarina Filipović,</p>
+              <p>Menadzer logistike</p>
+              <p>+381646429270</p>
+              <p>katarina.filipovic@iskonbgd.rs</p>
+            </div>
+          </div>
+
+          <div class="avatar" id="aleksandra">
+            <div class="ikonica">
+              <i class="avatar fa-solid fa-person-dress fa-3x"></i>
+            </div>
+            <div class="avatar-tekst">
+              <p>Katarina Filipović,</p>
+              <p>Menadzer logistike</p>
+              <p>+381646429270</p>
+              <p>katarina.filipovic@iskonbgd.rs</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!---Treca sekcija = Lokacija na mapi--->
+      <section class="mapa">
+        <div class="mapa text-center">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Belička 24, Beograd&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
+          <hr class="nevidljiva-linija" id="upit-anchor" />
+        </div>
+      </section>
+
+      <!---Cetvrta sekcija = upit--->
+      <section class="from">
+        <a name="upit-anchor">
+          <form action="/submit" method="post" id="upit-anchor">
+            <div class="card">
+              <div class="card-header">
+                <h3>Upit za transport</h3>
+              </div>
+              <div class="container card-body" id="kartica">
+                <div class="meso">
+                  <h4>Podaci o transportu</h4>
+                  <div class="vrstaTransporta podaci-za-transport">
+                    <select
+                      class="kucica"
+                      name="tipTransporta"
+                      id="izbor-transporta"
+                      required
+                    >
+                      <option value="">--Vrsta transporta--</option>
+                      <option value="avio">Avio</option>
+                      <option value="brodski">Brodski</option>
+                      <option value="drumski">Drumski</option>
+                      <option value="zeleznicki">Zeleznicki</option>
+                    </select>
+                  </div>
+                  <div class="mestoUtovara">
+                    <input
+                      type="text"
+                      class="kucica"
+                      name="mestoUtovara"
+                      id="mestoUtovara"
+                      placeholder="Mesto utovara"
+                      required
+                    />
+                  </div>
+                  <div class="mestoIstovara">
+                    <input
+                      type="text"
+                      class="kucica"
+                      id="mestoIstovara"
+                      name="mestoIstovara"
+                      placeholder="Mesto istovara: "
+                      required
+                    />
+                  </div>
+                  <div class="podaciORobi">
+                    <input
+                      type="text"
+                      class="kucica"
+                      id="podaciORobi"
+                      name="podaciORobi"
+                      placeholder="Podaci o robi"
+                      required
+                    />
+                  </div>
+                  <div class="ukupnaTezina">
+                    <input
+                      type="number"
+                      min="0"
+                      class="kucica"
+                      id="ukupnaTezina"
+                      name="ukupnaTezina"
+                      placeholder="Bruto težina (kg)"
+                      required
+                    />
+                  </div>
+                  <div class="dimezije">
+                    <input
+                      type="text"
+                      class="kucica"
+                      id="dimenzija"
+                      name="dimenzija"
+                      placeholder="Dimenzije (D x Š x V) "
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="meso">
+                  <h4>Podaci o naručiocu</h4>
+                  <div class="nazivFirme licni-podaci">
+                    <input
+                      type="name"
+                      class="kucica"
+                      id="nazivFirme"
+                      name="nazivFirme"
+                      placeholder="Naziv firme"
+                      required
+                    />
+                  </div>
+                  <div class="imePrezime">
+                    <input
+                      type="name"
+                      class="kucica"
+                      id="imeIPrezime"
+                      name="imeIPrezime"
+                      placeholder="Ime i Prezime"
+                      required
+                    />
+                  </div>
+                  <div class="telefon">
+                    <input
+                      type="text"
+                      class="kucica"
+                      id="Telefon"
+                      name="telefon"
+                      placeholder="Telefon"
+                      required
+                    />
+                  </div>
+                  <div class="email">
+                    <input
+                      type="email"
+                      class="kucica"
+                      id="email"
+                      name="email"
+                      placeholder="E-mail (example@example.com)"
+                      required
+                    />
+                  </div>
+                  <div class="datumUtovara">
+                    <input
+                      type="date"
+                      class="kucica"
+                      id="datumUtovara"
+                      name="datumUtovara"
+                      placeholder="Datum utovara (dd/mm/gggg)"
+                      required
+                    />
+                  </div>
+                  <div class="napomena">
+                    <textarea
+                      name="dodatnaNapomena"
+                      id="kucetina"
+                      placeholder="Napomene:"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <section class="sekcija-dugme">
+                <div class="dugmad">
+                  <button type="submit" class="dugme btn-lg" id="dugme-potvrdi">
+                    Pošalji
+                  </button>
+                </div>
+              </section>
+            </div>
+          </form>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="info">
+        <div class="logo">
+          <img src="Slike/logo-cropped.svg" alt="" />
+          <div class="mreze">
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Ffeed%2F&trk=login_reg_redirect"
+            >
+              <i class="fa-brands fa-linkedin fal"></i
+            ></a>
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.facebook.com/campaign/landing.php?campaign_id=17872459883&extra_1=s%7Cc%7C613001324093%7Cb%7Cfacebook%20%27%7C&placement=&creative=613001324093&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D17872459883%26adgroupid%3D145027591568%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D2688%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI2qKEkaj5-wIVBgOLCh1RPwJsEAAYASAAEgJ71vD_BwE"
+              ><i class="fa-brands fa-facebook fal"></i
+            ></a>
+            <a
+              class="linkik"
+              target="_blank"
+              href="https://www.instagram.com/accounts/login/"
+              ><i class="fa-brands fa-instagram fal"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dodinf">
+          <div class="lokacija">
+            <h5>Lokacija</h5>
+            <p class="prviParagraf">Kancelarija: Belička 24</p>
+            <p>Sedište: Ustanička 120</p>
+          </div>
+          <div class="kontakti">
+            <h5>Kontakt</h5>
+            <p class="prviParagraf">
+              <i class="fa-solid fa-phone fa-3x footer-ikonica"></i> 011 3478151
+            </p>
+            <p>
+              <i class="fa-solid fa-phone fa-3x footer-ikonica"></i> 011 3478161
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope fa-3x footer-ikonica"></i>
+              office@iskonbgd.rs
+            </p>
+          </div>
+          <div class="stranice">
+            <h5>Posetite</h5>
+            <p class="prviParagraf"><a href="home.html">Home</a></p>
+            <p><a href="o-nama.html">O nama</a></p>
+            <p><a href="usluge.html">Usluge</a></p>
+            <p><a href="kontakt.html">Kontakt</a></p>
+            <p><a href="kontakt.html">Upit</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="socials">
+        <div class="jezici">
+          <a href="kontakt.html"
+            ><img class="srb" src="Slike/zastava-srbije-grb.png" alt=""
+          /></a>
+          <a href="kontakt-eng.html"
+            ><img class="eng" src="Slike/zastava-uk.png" alt=""
+          /></a>
+          <a href="kontakt.html"
+            ><img class="rus" src="Slike/zastava-rusije.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="kopirajt">© Sirogojno</div>
+    </footer>
+    <!-- Jquery i JS za navbar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/Javascript/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- <script src="Javascript/less.js"></script> -->
+  </body>
+</html>
